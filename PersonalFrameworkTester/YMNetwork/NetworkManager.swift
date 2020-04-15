@@ -132,34 +132,3 @@ struct NetworkManager {
         }
     }
 }
-
-enum NetworkResponse: String {
-
-    case success
-    case authenticationError = "You need to be authenticated first."
-    case badRequest = "Bad Request"
-    case outdated = "The url you requested is outdated."
-    case failed = "Network requst failed."
-    case noData = "Response returned with no data to decode."
-    case unableToDecode = "We could not decode the response."
-}
-
-enum Result<Value> {
-
-    case success(Value)
-    case failure(NetworkResponse)
-}
-
-public struct Response {
-
-    let response: HTTPURLResponse?
-    let data: Data?
-}
-
-// Codable response protocol that conforms to Codable
-public protocol CodableResponse: Codable {}
-
-extension CodableResponse {
-
-    public func encode(to encoder: Encoder) throws {}
-}

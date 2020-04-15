@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import YMNetwork
 
 struct MovieResponse: CodableResponse {
 
