@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct MovieResponse: Decodable {
+struct MovieResponse: CodableResponse {
 
     private enum CodingKeys: String, CodingKey {
         case page

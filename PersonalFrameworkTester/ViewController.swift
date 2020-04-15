@@ -22,12 +22,10 @@ class ViewController: UIViewController {
     func testNetwork() {
 
         let manager = NetworkManager()
-        manager.getNewMovies(page: 1) { (movies, error) in
-            if let err = error {
-                print(err)
-            }
-            if let films = movies {
-                print(films)
+
+        manager.getNewMovies(page: 1) { [weak self] (response: MovieResponse?, error) in
+            if let test = response {
+                print(test)
             }
         }
     }

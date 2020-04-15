@@ -83,23 +83,30 @@ struct NetworkManager {
     static let APIKey = "e9d9dcae84d9a94aedc5412e5e521fc7"
     private let manager = YMNetworkManager<MovieAPI>()
 
-    fileprivate func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String> {
+    fileprivate func handleNetworkResponse<T: CodableResponse>(_ response: Response) -> Result<T> {
 
-        switch response.statusCode {
+        switch response.response?.statusCode ?? -1 {
         case 200...299:
-            return .success
+            do {
+                guard let data = response.data else { return .failure(NetworkResponse.failed) }
+                let apiResponse = try JSONDecoder().decode(T.self, from: data)
+                return Result.success(apiResponse)
+            } catch {
+                return .failure(NetworkResponse.failed)
+            }
+
         case 401...500:
-            return .failure(NetworkResponse.authenticationError.rawValue)
+            return .failure(NetworkResponse.authenticationError)
         case 501...599:
-            return .failure(NetworkResponse.badRequest.rawValue)
+            return .failure(NetworkResponse.badRequest)
         case 600:
-            return .failure(NetworkResponse.outdated.rawValue)
+            return .failure(NetworkResponse.outdated)
         default:
-            return .failure(NetworkResponse.failed.rawValue)
+            return .failure(NetworkResponse.failed)
         }
     }
 
-    func getNewMovies(page: Int, completion: @escaping (_ movie: [Movie]?, _ error: String?) -> ()) {
+    func getNewMovies<T: CodableResponse>(page: Int, completion: @escaping (_ response: T?, _ error: String?) -> ()) {
 
         manager.request(.newMovies(page: page)) { (data, response, error) in
 
@@ -109,24 +116,17 @@ struct NetworkManager {
 
             if let response = response as? HTTPURLResponse {
 
-                let result = self.handleNetworkResponse(response)
+                let result: Result<T> = self.handleNetworkResponse(
+                    Response(
+                        response: response,
+                        data: data
+                    )
+                )
                 switch result {
-                case .success:
-                    guard let responseData = data else {
-                        completion(nil, NetworkResponse.noData.rawValue)
-                        return
-                    }
-                    do {
-                        let apiResponse = try JSONDecoder().decode(
-                            MovieResponse.self,
-                            from: responseData
-                        )
-                        completion(apiResponse.movies, nil)
-                    } catch {
-                        completion(nil, NetworkResponse.unableToDecode.rawValue)
-                    }
+                case .success(let data):
+                    completion(data, nil)
                 case .failure(let error):
-                    completion(nil, error)
+                    completion(nil, error.rawValue)
                 }
             }
         }
@@ -144,8 +144,22 @@ enum NetworkResponse: String {
     case unableToDecode = "We could not decode the response."
 }
 
-enum Result<String> {
+enum Result<Value> {
 
-    case success
-    case failure(String)
+    case success(Value)
+    case failure(NetworkResponse)
+}
+
+public struct Response {
+
+    let response: HTTPURLResponse?
+    let data: Data?
+}
+
+// Codable response protocol that conforms to Codable
+public protocol CodableResponse: Codable {}
+
+extension CodableResponse {
+
+    public func encode(to encoder: Encoder) throws {}
 }
