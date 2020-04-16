@@ -14,101 +14,37 @@ enum NetworkEnvironment {
     case qa
     case production
     case staging
-}
 
-public enum MovieAPI {
-
-    case recommended(id: Int)
-    case popular(page: Int)
-    case newMovies(page: Int)
-    case video(id: Int)
-}
-
-extension MovieAPI: EndPointType {
-
-    var environmentBaseURL : String {
+    var baseURL: String {
         switch NetworkManager.environment {
         case .production: return "https://api.themoviedb.org/3/movie/"
         case .qa: return "https://qa.themoviedb.org/3/movie/"
         case .staging: return "https://staging.themoviedb.org/3/movie/"
         }
     }
-
-    public var baseURL: URL {
-        guard let url = URL(string: environmentBaseURL) else {
-            fatalError("baseURL could not be configured.")
-        }
-        return url
-    }
-
-    public var path: String {
-        switch self {
-        case .recommended(let id):
-            return "\(id)/recommendations"
-        case .popular:
-            return "popular"
-        case .newMovies:
-            return "now_playing"
-        case .video(let id):
-            return "\(id)/videos"
-        }
-    }
-
-    public var httpMethod: HTTPMethod {
-        return .get
-    }
-
-    public var task: HTTPTask {
-        switch self {
-        case .newMovies(let page):
-            return .requestParameters(
-                bodyParameters: nil,
-                urlParameters: ["page": page, "api_key": NetworkManager.APIKey]
-            )
-        default:
-            return .request
-        }
-    }
-
-    public var headers: HTTPHeaders? {
-        return nil
-    }
 }
+
 
 // MARK: - NetworkManager
 
 struct NetworkManager {
 
     static let environment: NetworkEnvironment = .production
-    static let APIKey = "e9d9dcae84d9a94aedc5412e5e521fc7"
-    private let manager = YMNetworkManager<MovieAPI>()
+    static let shared = NetworkManager()
 
-    fileprivate func handleNetworkResponse<T: CodableResponse>(_ response: Response) -> Result<T> {
+    private let manager = YMNetworkManager(
+        configuration: YMNetworkConfiguartion(
+            baseURL: environment.baseURL,
+            headers: [:]
+        )
+    )
 
-        switch response.response?.statusCode ?? -1 {
-        case 200...299:
-            do {
-                guard let data = response.data else { return .failure(NetworkResponse.failed) }
-                let apiResponse = try JSONDecoder().decode(T.self, from: data)
-                return Result.success(apiResponse)
-            } catch {
-                return .failure(NetworkResponse.failed)
-            }
+    func request<T: CodableResponse>(
+        request: YMRequest,
+        completion: @escaping (_ response: T?, _ error: String?) -> ()
+    ) {
 
-        case 401...500:
-            return .failure(NetworkResponse.authenticationError)
-        case 501...599:
-            return .failure(NetworkResponse.badRequest)
-        case 600:
-            return .failure(NetworkResponse.outdated)
-        default:
-            return .failure(NetworkResponse.failed)
-        }
-    }
-
-    func getNewMovies<T: CodableResponse>(page: Int, completion: @escaping (_ response: T?, _ error: String?) -> ()) {
-
-        manager.request(.newMovies(page: page)) { (data, response, error) in
+        manager.request(request) { (data, response, error) in
 
             if error != nil {
                 completion(nil, "Please check your network connection")
@@ -116,7 +52,7 @@ struct NetworkManager {
 
             if let response = response as? HTTPURLResponse {
 
-                let result: Result<T> = self.handleNetworkResponse(
+                let result: Result<T> = self.manager.handleNetworkResponse(
                     Response(
                         response: response,
                         data: data

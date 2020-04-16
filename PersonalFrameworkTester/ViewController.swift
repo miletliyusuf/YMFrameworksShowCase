@@ -21,9 +21,10 @@ class ViewController: UIViewController {
 
     func testNetwork() {
 
-        let manager = NetworkManager()
-
-        manager.getNewMovies(page: 1) { [weak self] (response: MovieResponse?, error) in
+        let request = MovieRequest(page: 1)
+        NetworkManager.shared.request(
+            request: request
+        ) { [weak self] (response: MovieResponse?, error) in
             if let test = response {
                 print(test)
             }

@@ -24,6 +24,7 @@ struct MovieResponse: CodableResponse {
     let movies: [Movie]
 
     init(from decoder: Decoder) throws {
+
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
         page = try container.decode(Int.self, forKey: .page)
