@@ -44,26 +44,17 @@ struct NetworkManager {
         completion: @escaping (_ response: T?, _ error: String?) -> ()
     ) {
 
-        manager.request(request) { (data, response, error) in
+        manager.request(request) { (response, result: Result<T>, error) in
 
             if error != nil {
                 completion(nil, "Please check your network connection")
             }
 
-            if let response = response as? HTTPURLResponse {
-
-                let result: Result<T> = self.manager.handleNetworkResponse(
-                    Response(
-                        response: response,
-                        data: data
-                    )
-                )
-                switch result {
-                case .success(let data):
-                    completion(data, nil)
-                case .failure(let error):
-                    completion(nil, error.rawValue)
-                }
+            switch result {
+            case .success(let data):
+                completion(data, nil)
+            case .failure(let error):
+                completion(nil, error.rawValue)
             }
         }
     }
