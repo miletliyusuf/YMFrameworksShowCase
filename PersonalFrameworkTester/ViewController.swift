@@ -13,13 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
-        // - Network Test
-        testNetwork()
     }
 
+    // MARK: - Actions
 
-    func testNetwork() {
+    @IBAction private func didTapOnTestNetworkRequest(_ sender: UIButton) {
 
         let request = MovieRequest(page: 1)
         NetworkManager.shared.request(
