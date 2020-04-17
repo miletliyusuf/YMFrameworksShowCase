@@ -9,21 +9,27 @@
 import Foundation
 import YMNetwork
 
-protocol BaseRequest: YMRequest {}
+//["api_key": "e9d9dcae84d9a94aedc5412e5e521fc7"]
+
+protocol BaseRequest: YMRequest {
+
+    var apiKey: Parameters? { get }
+}
 extension BaseRequest {
 
-
+    var apiKey: Parameters? {
+        return ["api_key": "e9d9dcae84d9a94aedc5412e5e521fc7"]
+    }
 }
 
-struct MovieRequest: YMRequest {
+struct MovieRequest: BaseRequest {
 
     var path: String = "now_playing"
     var urlParameters: Parameters?
 
     init(page: Int) {
 
-        urlParameters = [:]
-        urlParameters?["api_key"] = "e9d9dcae84d9a94aedc5412e5e521fc7"
+        urlParameters = apiKey
         urlParameters?["page"] = page
     }
 }

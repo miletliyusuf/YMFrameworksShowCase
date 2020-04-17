@@ -22,17 +22,6 @@ struct MovieResponse: CodableResponse {
     let numberOfResults: Int
     let numberOfPages: Int
     let movies: [Movie]
-
-    init(from decoder: Decoder) throws {
-
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-
-        page = try container.decode(Int.self, forKey: .page)
-        numberOfResults = try container.decode(Int.self, forKey: .numberOfResults)
-        numberOfPages = try container.decode(Int.self, forKey: .numberOfPages)
-        movies = try container.decode([Movie].self, forKey: .movies)
-
-    }
 }
 
 // MARK: - Movie
@@ -55,17 +44,5 @@ struct Movie: Decodable {
         case releaseDate = "release_date"
         case rating = "vote_average"
         case overview
-    }
-
-    init(from decoder: Decoder) throws {
-        let movieContainer = try decoder.container(keyedBy: CodingKeys.self)
-
-        id = try movieContainer.decode(Int.self, forKey: .id)
-        posterPath = try movieContainer.decode(String.self, forKey: .posterPath)
-        backdrop = try movieContainer.decode(String.self, forKey: .backdrop)
-        title = try movieContainer.decode(String.self, forKey: .title)
-        releaseDate = try movieContainer.decode(String.self, forKey: .releaseDate)
-        rating = try movieContainer.decode(Double.self, forKey: .rating)
-        overview = try movieContainer.decode(String.self, forKey: .overview)
     }
 }
