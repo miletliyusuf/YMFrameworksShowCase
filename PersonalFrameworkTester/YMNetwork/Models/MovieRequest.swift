@@ -9,8 +9,6 @@
 import Foundation
 import YMNetwork
 
-//["api_key": "e9d9dcae84d9a94aedc5412e5e521fc7"]
-
 protocol BaseRequest: YMRequest {
 
     var apiKey: Parameters? { get }

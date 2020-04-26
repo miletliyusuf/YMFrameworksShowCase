@@ -9,6 +9,10 @@
 import Foundation
 import YMNetwork
 
+struct CoreResponse: CodableResponse {
+
+}
+
 struct MovieResponse: CodableResponse {
 
     private enum CodingKeys: String, CodingKey {

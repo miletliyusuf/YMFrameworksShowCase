@@ -14,9 +14,11 @@ enum NetworkEnvironment {
     case qa
     case production
     case staging
+    case download
 
     var baseURL: String {
         switch NetworkManager.environment {
+        case .download: return "https://speed.hetzner.de/"
         case .production: return "https://api.themoviedb.org/3/movie/"
         case .qa: return "https://qa.themoviedb.org/3/movie/"
         case .staging: return "https://staging.themoviedb.org/3/movie/"
@@ -27,9 +29,9 @@ enum NetworkEnvironment {
 
 // MARK: - NetworkManager
 
-struct NetworkManager {
+class NetworkManager {
 
-    static let environment: NetworkEnvironment = .production
+    static let environment: NetworkEnvironment = .download//.production
     static let shared = NetworkManager()
 
     private let manager = YMNetworkManager(
@@ -56,6 +58,26 @@ struct NetworkManager {
             case .failure(let error):
                 completion(nil, error.rawValue)
             }
+        }
+    }
+
+    func cancelDownload(request: YMDownloadRequest) {
+
+        manager.cancelDownloadTask(of: request)
+    }
+
+    func pauseDownload(request: YMDownloadRequest) {
+
+        manager.pauseDownloadTask(of: request)
+    }
+
+    func resumeDownload(
+        request: YMDownloadRequest,
+        completion: @escaping (_ status: Bool, _ error: String?) -> ()
+    ) {
+
+        manager.resumeDownloadTask(of: request) { (status, error) in
+            completion(status, error)
         }
     }
 }

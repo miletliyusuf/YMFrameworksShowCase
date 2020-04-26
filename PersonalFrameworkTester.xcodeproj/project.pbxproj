@@ -16,6 +16,7 @@
 		884DDE7B2444E0DF004782AD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884DDE7A2444E0DF004782AD /* NetworkManager.swift */; };
 		884DDE902444E5C6004782AD /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884DDE8F2444E5C6004782AD /* MovieModel.swift */; };
 		886091732448FED800267B42 /* MovieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886091722448FED800267B42 /* MovieRequest.swift */; };
+		887494B8244E3B8700A83DBF /* DownloadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887494B7244E3B8700A83DBF /* DownloadRequest.swift */; };
 		88D3614424471BCA00F303AC /* YMNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D3614324471BC100F303AC /* YMNetwork.framework */; };
 		88D3614524471BCA00F303AC /* YMNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88D3614324471BC100F303AC /* YMNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		884DDE7A2444E0DF004782AD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		884DDE8F2444E5C6004782AD /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		886091722448FED800267B42 /* MovieRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRequest.swift; sourceTree = "<group>"; };
+		887494B7244E3B8700A83DBF /* DownloadRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadRequest.swift; sourceTree = "<group>"; };
 		88D3613E24471BC100F303AC /* YMNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YMNetwork.xcodeproj; path = ../YMNetwork/YMNetwork.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 			children = (
 				884DDE8F2444E5C6004782AD /* MovieModel.swift */,
 				886091722448FED800267B42 /* MovieRequest.swift */,
+				887494B7244E3B8700A83DBF /* DownloadRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				887494B8244E3B8700A83DBF /* DownloadRequest.swift in Sources */,
 				884DDE7B2444E0DF004782AD /* NetworkManager.swift in Sources */,
 				884DDE482444DE4A004782AD /* ViewController.swift in Sources */,
 				886091732448FED800267B42 /* MovieRequest.swift in Sources */,
