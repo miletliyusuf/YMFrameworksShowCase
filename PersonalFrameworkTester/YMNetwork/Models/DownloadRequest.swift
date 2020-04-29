@@ -13,13 +13,9 @@ struct DownloadRequest: YMDownloadRequest {
 
     var path: String
     var task: HTTPTaskType = .download
-    var isDownloading: Bool = false
-    var delegate: YMNetworkManagerDownloadDelegate?
-    var progress: Float = 0.0
-    var resumeData: Data?
-    var downloadTask: URLSessionDownloadTask?
+    var download: DownloadStruct? = DownloadStruct()
 
-    init(path: String, delegate: YMNetworkManagerDownloadDelegate? = nil) {
+    public init(path: String, delegate: YMNetworkManagerDownloadDelegate? = nil) {
 
         self.path = path
         self.delegate = delegate
