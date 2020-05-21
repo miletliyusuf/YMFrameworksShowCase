@@ -12,7 +12,6 @@ import YMNetwork
 struct DownloadRequest: YMDownloadRequest {
 
     var path: String
-    var task: HTTPTaskType = .download
     var download: DownloadStruct? = DownloadStruct()
 
     public init(path: String, delegate: YMNetworkManagerDownloadDelegate? = nil) {

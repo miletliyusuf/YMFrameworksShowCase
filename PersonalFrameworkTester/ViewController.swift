@@ -37,6 +37,24 @@ class ViewController: UIViewController {
         }
     }
 
+
+    // MARK: Upload
+
+    @IBAction private func didTapOnUploadRequest(_ sender: UIButton) {
+
+        let request = UploadRequest()
+        NetworkManager.shared.request(request: request) { (response: CoreResponse?, error) in
+            if let err = error {
+                print(err)
+            }
+            if let test = response {
+                print(test)
+            }
+        }
+    }
+
+    // MARK: Download
+
     @IBAction private func didTapOnResumeDownloadRequest(_ sender: UIButton) {
 
         NetworkManager.shared.resumeDownload(
@@ -70,6 +88,8 @@ class ViewController: UIViewController {
 
         NetworkManager.shared.cancelDownload(request: request)
     }
+
+    // MARK: -
 }
 
 extension ViewController: YMNetworkManagerDownloadDelegate {

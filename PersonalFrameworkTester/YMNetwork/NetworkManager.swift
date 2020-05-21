@@ -15,10 +15,12 @@ enum NetworkEnvironment {
     case production
     case staging
     case download
+    case upload
 
     var baseURL: String {
         switch NetworkManager.environment {
         case .download: return "https://speed.hetzner.de/"
+        case .upload: return "https://httpbin.org/"
         case .production: return "https://api.themoviedb.org/3/movie/"
         case .qa: return "https://qa.themoviedb.org/3/movie/"
         case .staging: return "https://staging.themoviedb.org/3/movie/"
@@ -31,7 +33,7 @@ enum NetworkEnvironment {
 
 class NetworkManager {
 
-    static let environment: NetworkEnvironment = .download//.production
+    static let environment: NetworkEnvironment = .upload//.production
     static let shared = NetworkManager()
 
     private let manager = YMNetworkManager(
