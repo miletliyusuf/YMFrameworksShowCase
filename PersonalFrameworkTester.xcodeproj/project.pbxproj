@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B9BF2FA46D924A1E812161D /* Pods_PersonalFrameworkTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07C8739BFDABD76DB3E5DA4 /* Pods_PersonalFrameworkTester.framework */; };
 		884DDE442444DE4A004782AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884DDE432444DE4A004782AD /* AppDelegate.swift */; };
 		884DDE462444DE4A004782AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884DDE452444DE4A004782AD /* SceneDelegate.swift */; };
 		884DDE482444DE4A004782AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884DDE472444DE4A004782AD /* ViewController.swift */; };
@@ -18,33 +19,7 @@
 		885E29F12461915C00090CA2 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 885E29F02461915C00090CA2 /* cat.jpg */; };
 		885E29F32461919500090CA2 /* UploadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885E29F22461919500090CA2 /* UploadRequest.swift */; };
 		886091732448FED800267B42 /* MovieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886091722448FED800267B42 /* MovieRequest.swift */; };
-		88D3614424471BCA00F303AC /* YMNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D3614324471BC100F303AC /* YMNetwork.framework */; };
-		88D3614524471BCA00F303AC /* YMNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88D3614324471BC100F303AC /* YMNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		88D3614224471BC100F303AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 88D3613E24471BC100F303AC /* YMNetwork.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 88E5DD2B2443271200A669D2;
-			remoteInfo = YMNetwork;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		884DDE7E2444E3A9004782AD /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				88D3614524471BCA00F303AC /* YMNetwork.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		884DDE402444DE4A004782AD /* PersonalFrameworkTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalFrameworkTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +35,10 @@
 		885E29F02461915C00090CA2 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 		885E29F22461919500090CA2 /* UploadRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadRequest.swift; sourceTree = "<group>"; };
 		886091722448FED800267B42 /* MovieRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRequest.swift; sourceTree = "<group>"; };
-		88D3613E24471BC100F303AC /* YMNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YMNetwork.xcodeproj; path = ../YMNetwork/YMNetwork.xcodeproj; sourceTree = "<group>"; };
+		88CCA6F22479A105001C61EC /* YMNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YMNetwork.framework; path = Carthage/Build/iOS/YMNetwork.framework; sourceTree = "<group>"; };
+		9FCF27A685343FAD34CAAACA /* Pods-PersonalFrameworkTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalFrameworkTester.debug.xcconfig"; path = "Target Support Files/Pods-PersonalFrameworkTester/Pods-PersonalFrameworkTester.debug.xcconfig"; sourceTree = "<group>"; };
+		A36F412ADFCCC9417DA7ED63 /* Pods-PersonalFrameworkTester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalFrameworkTester.release.xcconfig"; path = "Target Support Files/Pods-PersonalFrameworkTester/Pods-PersonalFrameworkTester.release.xcconfig"; sourceTree = "<group>"; };
+		D07C8739BFDABD76DB3E5DA4 /* Pods_PersonalFrameworkTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonalFrameworkTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88D3614424471BCA00F303AC /* YMNetwork.framework in Frameworks */,
+				5B9BF2FA46D924A1E812161D /* Pods_PersonalFrameworkTester.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,10 +56,10 @@
 		884DDE372444DE4A004782AD = {
 			isa = PBXGroup;
 			children = (
-				88D3613E24471BC100F303AC /* YMNetwork.xcodeproj */,
 				884DDE422444DE4A004782AD /* PersonalFrameworkTester */,
 				884DDE412444DE4A004782AD /* Products */,
 				884DDE752444E084004782AD /* Frameworks */,
+				A5FB542FEC235015AF4E9C0B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +90,8 @@
 		884DDE752444E084004782AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88CCA6F22479A105001C61EC /* YMNetwork.framework */,
+				D07C8739BFDABD76DB3E5DA4 /* Pods_PersonalFrameworkTester.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,12 +123,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		88D3613F24471BC100F303AC /* Products */ = {
+		A5FB542FEC235015AF4E9C0B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				88D3614324471BC100F303AC /* YMNetwork.framework */,
+				9FCF27A685343FAD34CAAACA /* Pods-PersonalFrameworkTester.debug.xcconfig */,
+				A36F412ADFCCC9417DA7ED63 /* Pods-PersonalFrameworkTester.release.xcconfig */,
 			);
-			name = Products;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,10 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 884DDE542444DE4D004782AD /* Build configuration list for PBXNativeTarget "PersonalFrameworkTester" */;
 			buildPhases = (
+				A37D0D7ADC6C35A34C25D0B7 /* [CP] Check Pods Manifest.lock */,
 				884DDE3C2444DE4A004782AD /* Sources */,
 				884DDE3D2444DE4A004782AD /* Frameworks */,
 				884DDE3E2444DE4A004782AD /* Resources */,
-				884DDE7E2444E3A9004782AD /* Embed Frameworks */,
+				88CCA6F12479A04C001C61EC /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -198,28 +180,12 @@
 			mainGroup = 884DDE372444DE4A004782AD;
 			productRefGroup = 884DDE412444DE4A004782AD /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 88D3613F24471BC100F303AC /* Products */;
-					ProjectRef = 88D3613E24471BC100F303AC /* YMNetwork.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				884DDE3F2444DE4A004782AD /* PersonalFrameworkTester */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		88D3614324471BC100F303AC /* YMNetwork.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = YMNetwork.framework;
-			remoteRef = 88D3614224471BC100F303AC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		884DDE3E2444DE4A004782AD /* Resources */ = {
@@ -234,6 +200,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88CCA6F12479A04C001C61EC /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/YMNetwork.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/Carthage/Build/iOS/YMNetwork.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+		A37D0D7ADC6C35A34C25D0B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PersonalFrameworkTester-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		884DDE3C2444DE4A004782AD /* Sources */ = {
@@ -388,10 +399,16 @@
 		};
 		884DDE552444DE4D004782AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FCF27A685343FAD34CAAACA /* Pods-PersonalFrameworkTester.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = J32736CL8V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PersonalFrameworkTester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -406,10 +423,16 @@
 		};
 		884DDE562444DE4D004782AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A36F412ADFCCC9417DA7ED63 /* Pods-PersonalFrameworkTester.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = J32736CL8V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PersonalFrameworkTester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

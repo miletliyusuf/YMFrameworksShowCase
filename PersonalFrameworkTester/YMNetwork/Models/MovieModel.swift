@@ -12,6 +12,7 @@ import YMNetwork
 struct MovieResponse: YMResponse {
 
     private enum CodingKeys: String, CodingKey {
+
         case page
         case numberOfResults = "total_results"
         case numberOfPages = "total_pages"
