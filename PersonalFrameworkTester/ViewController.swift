@@ -11,13 +11,11 @@ import YMNetwork
 
 class ViewController: UIViewController {
 
-    var downloadRequest: YMDownloadRequest {
-        return YMDownloadRequest(path: "100MB.bin", delegate: self)
-    }
+    var downloadRequest: YMDownloadRequest?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
 
     // MARK: - Actions
@@ -43,7 +41,7 @@ class ViewController: UIViewController {
     @IBAction private func didTapOnUploadRequest(_ sender: UIButton) {
 
         let request = UploadRequest()
-        NetworkManager.shared.request(request: request) { (response: CoreResponse?, error) in
+        NetworkManager.shared.request(request: request) { (response: DownloadUploadResponse?, error) in
             if let err = error {
                 print(err)
             }
@@ -57,46 +55,49 @@ class ViewController: UIViewController {
 
     @IBAction private func didTapOnResumeDownloadRequest(_ sender: UIButton) {
 
-        NetworkManager.shared.resumeDownload(
-            request: downloadRequest,
-            completion: { (status, error) in
+        if let req = downloadRequest {
+            NetworkManager.shared.resumeDownload(request: req, completion: { (status, error) in
+
                 if let err = error {
                     print(err)
                 }
                 print("Resume download status -> \(status)")
-        })
+            })
+        }
     }
 
     @IBAction private func didTapOnStartDownloadRequest(_ sender: UIButton) {
 
-        NetworkManager.shared.request(request: downloadRequest) { (response: CoreResponse?, error) in
-            if let err = error {
-                print(err)
-            }
-            if let test = response {
-                print(test)
-            }
+        if downloadRequest == nil {
+            downloadRequest = YMDownloadRequest(path: "100MB.bin", delegate: self)
         }
+
+        try? NetworkManager.shared.startDownload(request: &downloadRequest)
     }
 
     @IBAction private func didTapOnPauseDownloadRequest(_ sender: UIButton) {
 
-        NetworkManager.shared.pauseDownload(request: downloadRequest)
+        if let req = downloadRequest {
+            NetworkManager.shared.pauseDownload(request: req)
+        }
     }
 
     @IBAction private func didTapOnCancelDownloadRequest(_ sender: UIButton) {
 
-        NetworkManager.shared.cancelDownload(request: downloadRequest)
+        if let req = downloadRequest {
+            NetworkManager.shared.cancelDownload(request: req)
+        }
     }
-
-    // MARK: -
 }
+
+// MARK: - YMNetworkManagerDownloadDelegate
 
 extension ViewController: YMNetworkManagerDownloadDelegate {
 
     func ymNetworkManager(_ manager: YMNetworkManager, request: YMDownloadRequest?, downloadTask: URLSessionDownloadTask) {
 
-        print("is it? -> \(downloadRequest.isEqual(to: request)) ")
+        print("is it? -> \(String(describing: downloadRequest?.isEqual(to: request))) ")
         print("Download Progress -> \(String(format: "%.2f", arguments: [request?.progress ?? 0.0]))")
+        print("Download Progress of DownloadRequest -> \(String(format: "%.2f", arguments: [downloadRequest?.progress ?? 0.0]))")
     }
 }

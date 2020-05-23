@@ -9,11 +9,7 @@
 import Foundation
 import YMNetwork
 
-struct CoreResponse: CodableResponse {
-
-}
-
-struct MovieResponse: CodableResponse {
+struct MovieResponse: YMResponse {
 
     private enum CodingKeys: String, CodingKey {
         case page
@@ -30,7 +26,7 @@ struct MovieResponse: CodableResponse {
 
 // MARK: - Movie
 
-struct Movie: Decodable {
+struct Movie: YMModel {
 
     let id: Int
     let posterPath: String

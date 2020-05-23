@@ -43,12 +43,12 @@ class NetworkManager {
         )
     )
 
-    func request<T: CodableResponse>(
+    func request<T: YMResponse>(
         request: YMRequest,
         completion: @escaping (_ response: T?, _ error: String?) -> ()
     ) {
 
-        manager.request(request) { (response, result: Result<T>, error) in
+        manager.request(request) { (response, result: YMResult<T>, error) in
 
             if error != nil {
                 completion(nil, "Please check your network connection")
@@ -61,6 +61,11 @@ class NetworkManager {
                 completion(nil, error.rawValue)
             }
         }
+    }
+
+    func startDownload(request: inout YMDownloadRequest?) throws {
+
+        try? manager.download(with: &request)
     }
 
     func cancelDownload(request: YMDownloadRequest) {

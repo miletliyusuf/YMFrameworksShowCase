@@ -10,6 +10,8 @@ import Foundation
 import YMNetwork
 import UIKit
 
+struct DownloadUploadResponse: YMResponse {}
+
 struct UploadRequest: YMUploadRequest {
 
     var fileURL: URL? = Bundle.main.url(forResource: "cat", withExtension: "jpg")
