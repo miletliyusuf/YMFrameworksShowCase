@@ -33,7 +33,7 @@ enum NetworkEnvironment {
 
 class NetworkManager {
 
-    static let environment: NetworkEnvironment = .download
+    static let environment: NetworkEnvironment = .production
     static let shared = NetworkManager()
 
     private let manager = YMNetworkManager(

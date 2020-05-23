@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         let request = MovieRequest(page: 1)
         NetworkManager.shared.request(
             request: request
-        ) { [weak self] (response: MovieResponse?, error) in
+        ) { (response: MovieResponse?, error) in
             if let err = error {
                 print(err)
             }
