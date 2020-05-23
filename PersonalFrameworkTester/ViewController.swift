@@ -11,8 +11,8 @@ import YMNetwork
 
 class ViewController: UIViewController {
 
-    var request: YMDownloadRequest {
-        return DownloadRequest(path: "100MB.bin", delegate: self)
+    var downloadRequest: YMDownloadRequest {
+        return YMDownloadRequest(path: "100MB.bin", delegate: self)
     }
 
     override func viewDidLoad() {
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
     @IBAction private func didTapOnResumeDownloadRequest(_ sender: UIButton) {
 
         NetworkManager.shared.resumeDownload(
-            request: request,
+            request: downloadRequest,
             completion: { (status, error) in
                 if let err = error {
                     print(err)
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
 
     @IBAction private func didTapOnStartDownloadRequest(_ sender: UIButton) {
 
-        NetworkManager.shared.request(request: request) { (response: CoreResponse?, error) in
+        NetworkManager.shared.request(request: downloadRequest) { (response: CoreResponse?, error) in
             if let err = error {
                 print(err)
             }
@@ -81,12 +81,12 @@ class ViewController: UIViewController {
 
     @IBAction private func didTapOnPauseDownloadRequest(_ sender: UIButton) {
 
-        NetworkManager.shared.pauseDownload(request: request)
+        NetworkManager.shared.pauseDownload(request: downloadRequest)
     }
 
     @IBAction private func didTapOnCancelDownloadRequest(_ sender: UIButton) {
 
-        NetworkManager.shared.cancelDownload(request: request)
+        NetworkManager.shared.cancelDownload(request: downloadRequest)
     }
 
     // MARK: -
@@ -96,6 +96,7 @@ extension ViewController: YMNetworkManagerDownloadDelegate {
 
     func ymNetworkManager(_ manager: YMNetworkManager, request: YMDownloadRequest?, downloadTask: URLSessionDownloadTask) {
 
+        print("is it? -> \(downloadRequest.isEqual(to: request)) ")
         print("Download Progress -> \(String(format: "%.2f", arguments: [request?.progress ?? 0.0]))")
     }
 }
