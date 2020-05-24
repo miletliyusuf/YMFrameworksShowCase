@@ -1,18 +1,9 @@
 {
-  "Mac" : [
-
-  ],
-  "watchOS" : [
-
-  ],
-  "tvOS" : [
-
-  ],
   "commitish" : "1.0.1",
   "iOS" : [
     {
       "name" : "YMNetwork",
-      "hash" : "af6651281415bffaad4a547b3b2046bc7c46f92e7d218409d3b12bf05517d2cf",
+      "hash" : "4da4d29eae8b36f849ac31ab10383019979d091cba7ed0581dfec25b4a0f8dad",
       "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
     }
   ]

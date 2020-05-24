@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import YMNetwork_Swift
+import YMNetwork
 
 enum NetworkEnvironment {
 
@@ -37,7 +37,7 @@ class NetworkManager {
     static let shared = NetworkManager()
 
     private let manager = YMNetworkManager(
-        configuration: YMNetworkConfiguartion(
+        configuration: YMNetworkConfiguration(
             baseURL: environment.baseURL,
             headers: [:]
         )
