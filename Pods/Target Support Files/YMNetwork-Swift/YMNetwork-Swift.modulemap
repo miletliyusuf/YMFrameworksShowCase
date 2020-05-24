@@ -1,0 +1,6 @@
+framework module YMNetwork_Swift {
+  umbrella header "YMNetwork-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

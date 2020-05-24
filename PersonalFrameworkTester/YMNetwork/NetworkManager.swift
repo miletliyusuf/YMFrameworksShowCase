@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import YMNetwork
+import YMNetwork_Swift
 
 enum NetworkEnvironment {
 

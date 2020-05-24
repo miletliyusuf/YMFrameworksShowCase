@@ -5,6 +5,6 @@ target 'PersonalFrameworkTester' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  #pod 'YMNetwork', :path => '../YMNetwork'
+ pod 'YMNetwork-Swift'
 
 end

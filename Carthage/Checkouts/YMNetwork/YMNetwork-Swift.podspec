@@ -15,8 +15,8 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "YMNetwork"
-  spec.version      = "1.0.0"
+  spec.name         = "YMNetwork-Swift"
+  spec.version      = "1.0.1"
   spec.summary      = "HTTP Networking library written in Swift."
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "YMNetwork/*"
+  spec.source_files  = "YMNetwork", "YMNetwork/**/*.swift"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"

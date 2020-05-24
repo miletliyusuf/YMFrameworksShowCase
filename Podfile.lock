@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 2d5eacfc6fabba74270abc07e3669edfa33b9bfe
+PODS:
+  - YMNetwork-Swift (1.0.1)
 
-COCOAPODS: 1.9.1
+DEPENDENCIES:
+  - YMNetwork-Swift
+
+SPEC REPOS:
+  trunk:
+    - YMNetwork-Swift
+
+SPEC CHECKSUMS:
+  YMNetwork-Swift: 95b68cf5ce733587cddb8619220a0b117223430f
+
+PODFILE CHECKSUM: fda18b841db0bf0700b6fc93ed5f765ec9356ecc
+
+COCOAPODS: 1.9.2

@@ -144,6 +144,7 @@
 				884DDE3D2444DE4A004782AD /* Frameworks */,
 				884DDE3E2444DE4A004782AD /* Resources */,
 				88CCA6F12479A04C001C61EC /* Carthage */,
+				59AEF7B3DC3F7EDFC62B581A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,6 +203,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		59AEF7B3DC3F7EDFC62B581A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonalFrameworkTester/Pods-PersonalFrameworkTester-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonalFrameworkTester/Pods-PersonalFrameworkTester-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonalFrameworkTester/Pods-PersonalFrameworkTester-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		88CCA6F12479A04C001C61EC /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
