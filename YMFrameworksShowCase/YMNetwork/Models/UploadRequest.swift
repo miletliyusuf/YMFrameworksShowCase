@@ -1,6 +1,6 @@
 //
 //  UploadRequest.swift
-//  PersonalFrameworkTester
+//  YMFrameworksShowCase
 //
 //  Created by Yusuf Miletli on 5.05.2020.
 //  Copyright © 2020 Miletli. All rights reserved.

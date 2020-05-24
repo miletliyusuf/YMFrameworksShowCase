@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  PersonalFrameworkTester
+//  YMFrameworksShowCase
 //
 //  Created by Yusuf Miletli on 13.04.2020.
 //  Copyright © 2020 Miletli. All rights reserved.

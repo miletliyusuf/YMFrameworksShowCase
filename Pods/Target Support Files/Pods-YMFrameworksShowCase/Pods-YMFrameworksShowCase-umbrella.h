@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_PersonalFrameworkTesterVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_PersonalFrameworkTesterVersionString[];
+FOUNDATION_EXPORT double Pods_YMFrameworksShowCaseVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_YMFrameworksShowCaseVersionString[];
 

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B9BF2FA46D924A1E812161D /* Pods_PersonalFrameworkTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07C8739BFDABD76DB3E5DA4 /* Pods_PersonalFrameworkTester.framework */; };
+		25371BF9B8F86FD68D5F5AB5 /* Pods_YMFrameworksShowCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2AB76F0B1D0AB6FC7D88E5 /* Pods_YMFrameworksShowCase.framework */; };
 		884DDE442444DE4A004782AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884DDE432444DE4A004782AD /* AppDelegate.swift */; };
 		884DDE462444DE4A004782AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884DDE452444DE4A004782AD /* SceneDelegate.swift */; };
 		884DDE482444DE4A004782AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884DDE472444DE4A004782AD /* ViewController.swift */; };
@@ -22,7 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		884DDE402444DE4A004782AD /* PersonalFrameworkTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalFrameworkTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2AB76F0B1D0AB6FC7D88E5 /* Pods_YMFrameworksShowCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YMFrameworksShowCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		884DDE402444DE4A004782AD /* YMFrameworksShowCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMFrameworksShowCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		884DDE432444DE4A004782AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		884DDE452444DE4A004782AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		884DDE472444DE4A004782AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +39,8 @@
 		88CCA6F22479A105001C61EC /* YMNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YMNetwork.framework; path = Carthage/Build/iOS/YMNetwork.framework; sourceTree = "<group>"; };
 		9FCF27A685343FAD34CAAACA /* Pods-PersonalFrameworkTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalFrameworkTester.debug.xcconfig"; path = "Target Support Files/Pods-PersonalFrameworkTester/Pods-PersonalFrameworkTester.debug.xcconfig"; sourceTree = "<group>"; };
 		A36F412ADFCCC9417DA7ED63 /* Pods-PersonalFrameworkTester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalFrameworkTester.release.xcconfig"; path = "Target Support Files/Pods-PersonalFrameworkTester/Pods-PersonalFrameworkTester.release.xcconfig"; sourceTree = "<group>"; };
-		D07C8739BFDABD76DB3E5DA4 /* Pods_PersonalFrameworkTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonalFrameworkTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED1A66A309C3F88F5850D751 /* Pods-YMFrameworksShowCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMFrameworksShowCase.debug.xcconfig"; path = "Target Support Files/Pods-YMFrameworksShowCase/Pods-YMFrameworksShowCase.debug.xcconfig"; sourceTree = "<group>"; };
+		F7C2BDD841274ACE10D10B97 /* Pods-YMFrameworksShowCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMFrameworksShowCase.release.xcconfig"; path = "Target Support Files/Pods-YMFrameworksShowCase/Pods-YMFrameworksShowCase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B9BF2FA46D924A1E812161D /* Pods_PersonalFrameworkTester.framework in Frameworks */,
+				25371BF9B8F86FD68D5F5AB5 /* Pods_YMFrameworksShowCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +58,7 @@
 		884DDE372444DE4A004782AD = {
 			isa = PBXGroup;
 			children = (
-				884DDE422444DE4A004782AD /* PersonalFrameworkTester */,
+				884DDE422444DE4A004782AD /* YMFrameworksShowCase */,
 				884DDE412444DE4A004782AD /* Products */,
 				884DDE752444E084004782AD /* Frameworks */,
 				A5FB542FEC235015AF4E9C0B /* Pods */,
@@ -66,12 +68,12 @@
 		884DDE412444DE4A004782AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				884DDE402444DE4A004782AD /* PersonalFrameworkTester.app */,
+				884DDE402444DE4A004782AD /* YMFrameworksShowCase.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		884DDE422444DE4A004782AD /* PersonalFrameworkTester */ = {
+		884DDE422444DE4A004782AD /* YMFrameworksShowCase */ = {
 			isa = PBXGroup;
 			children = (
 				885E29EE2461915000090CA2 /* Resources */,
@@ -84,14 +86,14 @@
 				884DDE4E2444DE4D004782AD /* LaunchScreen.storyboard */,
 				884DDE512444DE4D004782AD /* Info.plist */,
 			);
-			path = PersonalFrameworkTester;
+			path = YMFrameworksShowCase;
 			sourceTree = "<group>";
 		};
 		884DDE752444E084004782AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				88CCA6F22479A105001C61EC /* YMNetwork.framework */,
-				D07C8739BFDABD76DB3E5DA4 /* Pods_PersonalFrameworkTester.framework */,
+				2A2AB76F0B1D0AB6FC7D88E5 /* Pods_YMFrameworksShowCase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,6 +130,8 @@
 			children = (
 				9FCF27A685343FAD34CAAACA /* Pods-PersonalFrameworkTester.debug.xcconfig */,
 				A36F412ADFCCC9417DA7ED63 /* Pods-PersonalFrameworkTester.release.xcconfig */,
+				ED1A66A309C3F88F5850D751 /* Pods-YMFrameworksShowCase.debug.xcconfig */,
+				F7C2BDD841274ACE10D10B97 /* Pods-YMFrameworksShowCase.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -135,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		884DDE3F2444DE4A004782AD /* PersonalFrameworkTester */ = {
+		884DDE3F2444DE4A004782AD /* YMFrameworksShowCase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 884DDE542444DE4D004782AD /* Build configuration list for PBXNativeTarget "PersonalFrameworkTester" */;
+			buildConfigurationList = 884DDE542444DE4D004782AD /* Build configuration list for PBXNativeTarget "YMFrameworksShowCase" */;
 			buildPhases = (
 				A37D0D7ADC6C35A34C25D0B7 /* [CP] Check Pods Manifest.lock */,
 				884DDE3C2444DE4A004782AD /* Sources */,
@@ -150,9 +154,9 @@
 			);
 			dependencies = (
 			);
-			name = PersonalFrameworkTester;
+			name = YMFrameworksShowCase;
 			productName = PersonalFrameworkTester;
-			productReference = 884DDE402444DE4A004782AD /* PersonalFrameworkTester.app */;
+			productReference = 884DDE402444DE4A004782AD /* YMFrameworksShowCase.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +174,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 884DDE3B2444DE4A004782AD /* Build configuration list for PBXProject "PersonalFrameworkTester" */;
+			buildConfigurationList = 884DDE3B2444DE4A004782AD /* Build configuration list for PBXProject "YMFrameworksShowCase" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -183,7 +187,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				884DDE3F2444DE4A004782AD /* PersonalFrameworkTester */,
+				884DDE3F2444DE4A004782AD /* YMFrameworksShowCase */,
 			);
 		};
 /* End PBXProject section */
@@ -209,15 +213,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PersonalFrameworkTester/Pods-PersonalFrameworkTester-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-YMFrameworksShowCase/Pods-YMFrameworksShowCase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PersonalFrameworkTester/Pods-PersonalFrameworkTester-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-YMFrameworksShowCase/Pods-YMFrameworksShowCase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonalFrameworkTester/Pods-PersonalFrameworkTester-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YMFrameworksShowCase/Pods-YMFrameworksShowCase-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		88CCA6F12479A04C001C61EC /* Carthage */ = {
@@ -255,7 +259,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PersonalFrameworkTester-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-YMFrameworksShowCase-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -417,7 +421,7 @@
 		};
 		884DDE552444DE4D004782AD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FCF27A685343FAD34CAAACA /* Pods-PersonalFrameworkTester.debug.xcconfig */;
+			baseConfigurationReference = ED1A66A309C3F88F5850D751 /* Pods-YMFrameworksShowCase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -427,12 +431,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = PersonalFrameworkTester/Info.plist;
+				INFOPLIST_FILE = YMFrameworksShowCase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.miletli.ysm.PersonalFrameworkTester;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miletli.ysm.YMFrameworksShowCase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,7 +445,7 @@
 		};
 		884DDE562444DE4D004782AD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A36F412ADFCCC9417DA7ED63 /* Pods-PersonalFrameworkTester.release.xcconfig */;
+			baseConfigurationReference = F7C2BDD841274ACE10D10B97 /* Pods-YMFrameworksShowCase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,12 +455,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = PersonalFrameworkTester/Info.plist;
+				INFOPLIST_FILE = YMFrameworksShowCase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.miletli.ysm.PersonalFrameworkTester;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miletli.ysm.YMFrameworksShowCase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,7 +470,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		884DDE3B2444DE4A004782AD /* Build configuration list for PBXProject "PersonalFrameworkTester" */ = {
+		884DDE3B2444DE4A004782AD /* Build configuration list for PBXProject "YMFrameworksShowCase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				884DDE522444DE4D004782AD /* Debug */,
@@ -475,7 +479,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		884DDE542444DE4D004782AD /* Build configuration list for PBXNativeTarget "PersonalFrameworkTester" */ = {
+		884DDE542444DE4D004782AD /* Build configuration list for PBXNativeTarget "YMFrameworksShowCase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				884DDE552444DE4D004782AD /* Debug */,

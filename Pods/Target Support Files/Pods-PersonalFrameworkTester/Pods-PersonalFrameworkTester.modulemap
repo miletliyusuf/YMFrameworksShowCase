@@ -1,6 +1,0 @@
-framework module Pods_PersonalFrameworkTester {
-  umbrella header "Pods-PersonalFrameworkTester-umbrella.h"
-
-  export *
-  module * { export * }
-}
