@@ -1,0 +1,6 @@
+framework module VisionDetect {
+  umbrella header "VisionDetect-umbrella.h"
+
+  export *
+  module * { export * }
+}

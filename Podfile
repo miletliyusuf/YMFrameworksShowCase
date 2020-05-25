@@ -6,5 +6,6 @@ target 'YMFrameworksShowCase' do
   use_frameworks!
 
  pod 'YMNetwork-Swift'
+ pod 'VisionDetect'
 
 end

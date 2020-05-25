@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		25371BF9B8F86FD68D5F5AB5 /* Pods_YMFrameworksShowCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2AB76F0B1D0AB6FC7D88E5 /* Pods_YMFrameworksShowCase.framework */; };
+		8838423D247AAE7F00C395BA /* VisionDetectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8838423C247AAE7F00C395BA /* VisionDetectViewController.swift */; };
 		884DDE442444DE4A004782AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884DDE432444DE4A004782AD /* AppDelegate.swift */; };
 		884DDE462444DE4A004782AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884DDE452444DE4A004782AD /* SceneDelegate.swift */; };
 		884DDE482444DE4A004782AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884DDE472444DE4A004782AD /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		2A2AB76F0B1D0AB6FC7D88E5 /* Pods_YMFrameworksShowCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YMFrameworksShowCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8838423C247AAE7F00C395BA /* VisionDetectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionDetectViewController.swift; sourceTree = "<group>"; };
 		884DDE402444DE4A004782AD /* YMFrameworksShowCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMFrameworksShowCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		884DDE432444DE4A004782AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		884DDE452444DE4A004782AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8838423B247AAE6500C395BA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				884DDE472444DE4A004782AD /* ViewController.swift */,
+				8838423C247AAE7F00C395BA /* VisionDetectViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		884DDE372444DE4A004782AD = {
 			isa = PBXGroup;
 			children = (
@@ -80,7 +91,7 @@
 				884DDE792444E0D2004782AD /* YMNetwork */,
 				884DDE432444DE4A004782AD /* AppDelegate.swift */,
 				884DDE452444DE4A004782AD /* SceneDelegate.swift */,
-				884DDE472444DE4A004782AD /* ViewController.swift */,
+				8838423B247AAE6500C395BA /* ViewControllers */,
 				884DDE492444DE4A004782AD /* Main.storyboard */,
 				884DDE4C2444DE4D004782AD /* Assets.xcassets */,
 				884DDE4E2444DE4D004782AD /* LaunchScreen.storyboard */,
@@ -279,6 +290,7 @@
 				885E29F32461919500090CA2 /* UploadRequest.swift in Sources */,
 				884DDE902444E5C6004782AD /* MovieModel.swift in Sources */,
 				884DDE442444DE4A004782AD /* AppDelegate.swift in Sources */,
+				8838423D247AAE7F00C395BA /* VisionDetectViewController.swift in Sources */,
 				884DDE462444DE4A004782AD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
