@@ -1,0 +1,10 @@
+{
+  "commitish" : "1.0.0",
+  "iOS" : [
+    {
+      "name" : "YMCirclePickerView",
+      "hash" : "1301abc03d9b9a76814c705471f206a7bdc3565ef9435841f32b3b463bd043b0",
+      "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+    }
+  ]
+}

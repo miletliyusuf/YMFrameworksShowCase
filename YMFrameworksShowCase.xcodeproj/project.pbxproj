@@ -17,10 +17,27 @@
 		884DDE502444DE4D004782AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884DDE4E2444DE4D004782AD /* LaunchScreen.storyboard */; };
 		884DDE7B2444E0DF004782AD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884DDE7A2444E0DF004782AD /* NetworkManager.swift */; };
 		884DDE902444E5C6004782AD /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884DDE8F2444E5C6004782AD /* MovieModel.swift */; };
+		885E2854248A7549003212DF /* YMCirclePickerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885E2853248A7549003212DF /* YMCirclePickerView.framework */; };
+		885E2855248A7549003212DF /* YMCirclePickerView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 885E2853248A7549003212DF /* YMCirclePickerView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		885E29F12461915C00090CA2 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 885E29F02461915C00090CA2 /* cat.jpg */; };
 		885E29F32461919500090CA2 /* UploadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885E29F22461919500090CA2 /* UploadRequest.swift */; };
 		886091732448FED800267B42 /* MovieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886091722448FED800267B42 /* MovieRequest.swift */; };
+		88FC41F224850C5100E5CE50 /* YMCirclePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FC41F124850C5100E5CE50 /* YMCirclePickerViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		88D17E2C2485B99E002E365E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				885E2855248A7549003212DF /* YMCirclePickerView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2A2AB76F0B1D0AB6FC7D88E5 /* Pods_YMFrameworksShowCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YMFrameworksShowCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,10 +52,12 @@
 		884DDE512444DE4D004782AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		884DDE7A2444E0DF004782AD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		884DDE8F2444E5C6004782AD /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		885E2853248A7549003212DF /* YMCirclePickerView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YMCirclePickerView.framework; path = Carthage/Build/iOS/YMCirclePickerView.framework; sourceTree = "<group>"; };
 		885E29F02461915C00090CA2 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 		885E29F22461919500090CA2 /* UploadRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadRequest.swift; sourceTree = "<group>"; };
 		886091722448FED800267B42 /* MovieRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRequest.swift; sourceTree = "<group>"; };
 		88CCA6F22479A105001C61EC /* YMNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YMNetwork.framework; path = Carthage/Build/iOS/YMNetwork.framework; sourceTree = "<group>"; };
+		88FC41F124850C5100E5CE50 /* YMCirclePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMCirclePickerViewController.swift; sourceTree = "<group>"; };
 		9FCF27A685343FAD34CAAACA /* Pods-PersonalFrameworkTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalFrameworkTester.debug.xcconfig"; path = "Target Support Files/Pods-PersonalFrameworkTester/Pods-PersonalFrameworkTester.debug.xcconfig"; sourceTree = "<group>"; };
 		A36F412ADFCCC9417DA7ED63 /* Pods-PersonalFrameworkTester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalFrameworkTester.release.xcconfig"; path = "Target Support Files/Pods-PersonalFrameworkTester/Pods-PersonalFrameworkTester.release.xcconfig"; sourceTree = "<group>"; };
 		ED1A66A309C3F88F5850D751 /* Pods-YMFrameworksShowCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMFrameworksShowCase.debug.xcconfig"; path = "Target Support Files/Pods-YMFrameworksShowCase/Pods-YMFrameworksShowCase.debug.xcconfig"; sourceTree = "<group>"; };
@@ -51,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25371BF9B8F86FD68D5F5AB5 /* Pods_YMFrameworksShowCase.framework in Frameworks */,
+				885E2854248A7549003212DF /* YMCirclePickerView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +82,7 @@
 			children = (
 				884DDE472444DE4A004782AD /* ViewController.swift */,
 				8838423C247AAE7F00C395BA /* VisionDetectViewController.swift */,
+				88FC41F124850C5100E5CE50 /* YMCirclePickerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -103,6 +124,7 @@
 		884DDE752444E084004782AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				885E2853248A7549003212DF /* YMCirclePickerView.framework */,
 				88CCA6F22479A105001C61EC /* YMNetwork.framework */,
 				2A2AB76F0B1D0AB6FC7D88E5 /* Pods_YMFrameworksShowCase.framework */,
 			);
@@ -160,6 +182,7 @@
 				884DDE3E2444DE4A004782AD /* Resources */,
 				88CCA6F12479A04C001C61EC /* Carthage */,
 				59AEF7B3DC3F7EDFC62B581A /* [CP] Embed Pods Frameworks */,
+				88D17E2C2485B99E002E365E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -287,6 +310,7 @@
 				884DDE7B2444E0DF004782AD /* NetworkManager.swift in Sources */,
 				884DDE482444DE4A004782AD /* ViewController.swift in Sources */,
 				886091732448FED800267B42 /* MovieRequest.swift in Sources */,
+				88FC41F224850C5100E5CE50 /* YMCirclePickerViewController.swift in Sources */,
 				885E29F32461919500090CA2 /* UploadRequest.swift in Sources */,
 				884DDE902444E5C6004782AD /* MovieModel.swift in Sources */,
 				884DDE442444DE4A004782AD /* AppDelegate.swift in Sources */,

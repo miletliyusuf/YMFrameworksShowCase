@@ -23,16 +23,31 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jVt-qJ-UGL">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtd-Gp-3lN">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KnY-U3-awf">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
-                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="VisionDetect"/>
-                                        <connections>
-                                            <segue destination="AfE-za-nM9" kind="show" id="Iwf-NA-TgI"/>
-                                        </connections>
-                                    </button>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtd-Gp-3lN">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="272.5"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="YMCirclePickerView"/>
+                                                <connections>
+                                                    <segue destination="BiY-aW-MNC" kind="show" id="cU4-fM-Mlz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NT5-h6-LPF">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="272.5"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="VisionDetect"/>
+                                                <connections>
+                                                    <segue destination="AfE-za-nM9" kind="show" id="f9h-rP-HOf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nPk-o0-m1e">
                                         <rect key="frame" x="0.0" y="272.5" width="414" height="273"/>
                                         <subviews>
@@ -152,7 +167,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zrC-Mu-03q" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="859" y="96"/>
+            <point key="canvasLocation" x="1016" y="96"/>
+        </scene>
+        <!--Circle Picker View Controller-->
+        <scene sceneID="L0h-ll-JVZ">
+            <objects>
+                <viewController id="BiY-aW-MNC" customClass="YMCirclePickerViewController" customModule="YMFrameworksShowCase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zpU-Tx-YVf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="top" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="6Rs-nl-cSw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="283"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Hd-08-r4o" customClass="YMCirclePickerView" customModule="YMCirclePickerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="96.5"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBg-N6-AFY" customClass="YMCirclePickerView" customModule="YMCirclePickerView">
+                                        <rect key="frame" x="0.0" y="96.5" width="414" height="111"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19j-T8-c6a" customClass="YMCirclePickerView" customModule="YMCirclePickerView">
+                                        <rect key="frame" x="0.0" y="207.5" width="414" height="75.5"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6Rs-nl-cSw" secondAttribute="bottom" id="Pm0-Lk-hsI"/>
+                            <constraint firstItem="cwY-yg-VR1" firstAttribute="trailing" secondItem="6Rs-nl-cSw" secondAttribute="trailing" id="YL2-ha-ZdB"/>
+                            <constraint firstItem="6Rs-nl-cSw" firstAttribute="leading" secondItem="cwY-yg-VR1" secondAttribute="leading" id="dh2-t3-0Tq"/>
+                            <constraint firstItem="6Rs-nl-cSw" firstAttribute="top" secondItem="cwY-yg-VR1" secondAttribute="top" id="w3a-6z-LLV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cwY-yg-VR1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T2M-Um-hFp"/>
+                    <connections>
+                        <outlet property="circlePickerView" destination="19j-T8-c6a" id="zrR-SJ-DGF"/>
+                        <outlet property="circlePickerView2" destination="7Hd-08-r4o" id="p1S-4h-CbA"/>
+                        <outlet property="circlePickerView3" destination="QBg-N6-AFY" id="wRW-Co-hg1"/>
+                        <outlet property="stackView" destination="6Rs-nl-cSw" id="WqP-EM-ULM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KK5-KB-Pf0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1784" y="96"/>
         </scene>
     </scenes>
 </document>

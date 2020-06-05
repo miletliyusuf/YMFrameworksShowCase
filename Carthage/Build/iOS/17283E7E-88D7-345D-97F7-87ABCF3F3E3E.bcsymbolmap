@@ -1,7 +1,7 @@
 BCSymbolMap Version: 2.0
 Apple clang version 11.0.3 (clang-1103.0.32.59)
 /Users/yusuf/Library/Caches/org.carthage.CarthageKit/DerivedData/11.4.1_11E503a/YMNetwork/1.0.1/Build/Intermediates.noindex/ArchiveIntermediates/YMNetwork/IntermediateBuildFilesPath/YMNetwork.build/Release-iphoneos/YMNetwork.build/DerivedSources/YMNetwork_vers.c
-/Users/yusuf/Developer/Personal/YM Frameworks/PersonalFrameworkTester/Carthage/Checkouts/YMNetwork
+/Users/yusuf/Developer/Personal/YM Frameworks/YMFrameworksShowCase/Carthage/Checkouts/YMNetwork
 _$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfC10Foundation3URLVSg_9YMNetwork17YMDownloadRequestCTg5Tf4gd_n
 _$s9YMNetwork0A13ConfigurationVwCP
 _$s9YMNetwork0A13ConfigurationVwxx
@@ -52,7 +52,7 @@ ___swift_reflection_version
 Apple clang version 11.0.3 (clang-1103.0.32.51)
 <swift-imported-modules>
 Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)
-/Users/yusuf/Developer/Personal/YM Frameworks/PersonalFrameworkTester/Carthage/Checkouts/YMNetwork/YMNetwork/Service/Configuration.swift
+/Users/yusuf/Developer/Personal/YM Frameworks/YMFrameworksShowCase/Carthage/Checkouts/YMNetwork/YMNetwork/Service/Configuration.swift
 $s10Foundation3URLVACSHAAWl
 <compiler-generated>
 $s10Foundation3URLVSgWOh
@@ -141,7 +141,7 @@ _symbolic ______pSgXw 9YMNetwork0A23ManagerDownloadDelegateP
 _$s9YMNetwork17YMDownloadRequestCMF
 _got.$s9YMNetwork9YMRequestMp
 _objc_classes
-/Users/yusuf/Developer/Personal/YM Frameworks/PersonalFrameworkTester/Carthage/Checkouts/YMNetwork/YMNetwork/Models/YMDownloadRequest.swift
+/Users/yusuf/Developer/Personal/YM Frameworks/YMFrameworksShowCase/Carthage/Checkouts/YMNetwork/YMNetwork/Models/YMDownloadRequest.swift
 $s9YMNetwork17YMDownloadRequestCMa
 $s9YMNetwork0A23ManagerDownloadDelegate_pSgXwWOh
 isEqual
@@ -250,7 +250,7 @@ _got.$sSYMp
 _got.$s8RawValueSYTl
 _got.$sSY8rawValuexSg03RawB0Qz_tcfCTq
 _got.$sSY8rawValue03RawB0QzvgTq
-/Users/yusuf/Developer/Personal/YM Frameworks/PersonalFrameworkTester/Carthage/Checkouts/YMNetwork/YMNetwork/Models/Response.swift
+/Users/yusuf/Developer/Personal/YM Frameworks/YMFrameworksShowCase/Carthage/Checkouts/YMNetwork/YMNetwork/Models/Response.swift
 $s9YMNetwork8ResponseVMa
 $s9YMNetwork8ResponseVwst
 $s9YMNetwork8ResponseVwet
@@ -315,7 +315,7 @@ _$s9YMNetwork17YMDownloadManagerC15activeDownloadsSDy10Foundation3URLVSgAA0B7Req
 _$s9YMNetwork17YMDownloadManagerC15activeDownloadsSDy10Foundation3URLVSgAA0B7RequestCGvsTq
 _$s9YMNetwork17YMDownloadManagerC15activeDownloadsSDy10Foundation3URLVSgAA0B7RequestCGvMTq
 _$s9YMNetwork17YMDownloadManagerCACycfCTq
-/Users/yusuf/Developer/Personal/YM Frameworks/PersonalFrameworkTester/Carthage/Checkouts/YMNetwork/YMNetwork/Managers/YMDownloadManager.swift
+/Users/yusuf/Developer/Personal/YM Frameworks/YMFrameworksShowCase/Carthage/Checkouts/YMNetwork/YMNetwork/Managers/YMDownloadManager.swift
 $s9YMNetwork17YMDownloadManagerCMa
 $s9YMNetwork17YMDownloadManagerC6sharedACvau
 globalinit_33_9C7DD81ECA1998CEEA8B367A34854D27_func0
@@ -430,7 +430,7 @@ _$s9YMNetwork0A7ManagerC16downloadsSessionSo12NSURLSessionCvMTq
 _$s9YMNetwork0A7ManagerC14uploadsSessionSo12NSURLSessionCvgTq
 _$s9YMNetwork0A7ManagerC14uploadsSessionSo12NSURLSessionCvsTq
 _$s9YMNetwork0A7ManagerC14uploadsSessionSo12NSURLSessionCvMTq
-/Users/yusuf/Developer/Personal/YM Frameworks/PersonalFrameworkTester/Carthage/Checkouts/YMNetwork/YMNetwork/YMNetwork.swift
+/Users/yusuf/Developer/Personal/YM Frameworks/YMFrameworksShowCase/Carthage/Checkouts/YMNetwork/YMNetwork/YMNetwork.swift
 $s9YMNetwork8YMResultOyxGAA10YMResponseRzlWOc
 $s9YMNetwork8YMResultOyxGSgAA10YMResponseRzlWOh
 $s9YMNetwork8YMResultOyxGSgAA10YMResponseRzlWOc
@@ -562,11 +562,11 @@ $s9YMNetwork0A7ManagerCMa
 ymNetworkManager
 _symbolic $s9YMNetwork15YMUploadRequestP
 _$s9YMNetwork15YMUploadRequest_pMF
-/Users/yusuf/Developer/Personal/YM Frameworks/PersonalFrameworkTester/Carthage/Checkouts/YMNetwork/YMNetwork/Models/UploadRequest.swift
+/Users/yusuf/Developer/Personal/YM Frameworks/YMFrameworksShowCase/Carthage/Checkouts/YMNetwork/YMNetwork/Models/UploadRequest.swift
 method.get
 _symbolic $s9YMNetwork9YMRequestP
 _$s9YMNetwork9YMRequest_pMF
-/Users/yusuf/Developer/Personal/YM Frameworks/PersonalFrameworkTester/Carthage/Checkouts/YMNetwork/YMNetwork/Models/Request.swift
+/Users/yusuf/Developer/Personal/YM Frameworks/YMFrameworksShowCase/Carthage/Checkouts/YMNetwork/YMNetwork/Models/Request.swift
 urlParameters.get
 bodyParameters.get
 headers.get
@@ -607,7 +607,7 @@ _$sS2SSysWL
 _got.$s10Foundation12URLQueryItemVMn
 _symbolic _____y_____G s23_ContiguousArrayStorageC 10Foundation12URLQueryItemV
 _$ss23_ContiguousArrayStorageCy10Foundation12URLQueryItemVGMD
-/Users/yusuf/Developer/Personal/YM Frameworks/PersonalFrameworkTester/Carthage/Checkouts/YMNetwork/YMNetwork/Encoding/Encoding.swift
+/Users/yusuf/Developer/Personal/YM Frameworks/YMFrameworksShowCase/Carthage/Checkouts/YMNetwork/YMNetwork/Encoding/Encoding.swift
 $sS2SSysWl
 __swift_destroy_boxed_opaque_existential_0
 $sSS3key_yp5valuetSgWOh
@@ -746,7 +746,7 @@ _got.$ss5ErrorP7_domainSSvgTq
 _got.$ss5ErrorP5_codeSivgTq
 _got.$ss5ErrorP9_userInfoyXlSgvgTq
 _got.$ss5ErrorP19_getEmbeddedNSErroryXlSgyFTq
-/Users/yusuf/Developer/Personal/YM Frameworks/PersonalFrameworkTester/Carthage/Checkouts/YMNetwork/YMNetwork/Service/Service.swift
+/Users/yusuf/Developer/Personal/YM Frameworks/YMFrameworksShowCase/Carthage/Checkouts/YMNetwork/YMNetwork/Service/Service.swift
 $s9YMNetwork12NetworkErrorOMa
 $s9YMNetwork12NetworkErrorOwup
 $s9YMNetwork12HTTPTaskTypeOMa

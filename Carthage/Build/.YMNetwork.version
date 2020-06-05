@@ -3,7 +3,7 @@
   "iOS" : [
     {
       "name" : "YMNetwork",
-      "hash" : "4da4d29eae8b36f849ac31ab10383019979d091cba7ed0581dfec25b4a0f8dad",
+      "hash" : "3252d0443a385665fe8cf5c8b0fdcd36f629fefc640bba88bc2b211eed2c6894",
       "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
     }
   ]
