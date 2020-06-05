@@ -1,20 +1,24 @@
 PODS:
   - VisionDetect (1.0.2)
+  - YMCirclePickerView (1.0.3)
   - YMNetwork-Swift (1.0.1)
 
 DEPENDENCIES:
   - VisionDetect
+  - YMCirclePickerView
   - YMNetwork-Swift
 
 SPEC REPOS:
   trunk:
     - VisionDetect
+    - YMCirclePickerView
     - YMNetwork-Swift
 
 SPEC CHECKSUMS:
   VisionDetect: 28fd435261caef4203660e77fe2953ad1a8febe0
+  YMCirclePickerView: c7e83f39cb062807b72e9d9bc98937f43940aa0c
   YMNetwork-Swift: 95b68cf5ce733587cddb8619220a0b117223430f
 
-PODFILE CHECKSUM: 24cba2a7b61a11e55a372f72c9440b17928ff110
+PODFILE CHECKSUM: 001e1319481c8c446b33592a1b5569d226a8be11
 
 COCOAPODS: 1.9.2

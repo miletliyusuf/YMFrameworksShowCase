@@ -1,2 +1,3 @@
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VisionDetect.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YMCirclePickerView.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YMNetwork_Swift.framework

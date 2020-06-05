@@ -7,5 +7,6 @@ target 'YMFrameworksShowCase' do
 
  pod 'YMNetwork-Swift'
  pod 'VisionDetect'
+ pod 'YMCirclePickerView' ##, :path => '../YMCirclePickerView'
 
 end

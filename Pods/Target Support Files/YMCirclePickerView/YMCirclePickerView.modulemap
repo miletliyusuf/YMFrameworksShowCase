@@ -1,0 +1,6 @@
+framework module YMCirclePickerView {
+  umbrella header "YMCirclePickerView-umbrella.h"
+
+  export *
+  module * { export * }
+}

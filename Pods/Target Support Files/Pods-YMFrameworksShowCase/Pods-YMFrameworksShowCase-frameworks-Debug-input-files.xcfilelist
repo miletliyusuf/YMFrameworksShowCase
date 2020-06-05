@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-YMFrameworksShowCase/Pods-YMFrameworksShowCase-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/VisionDetect/VisionDetect.framework
+${BUILT_PRODUCTS_DIR}/YMCirclePickerView/YMCirclePickerView.framework
 ${BUILT_PRODUCTS_DIR}/YMNetwork-Swift/YMNetwork_Swift.framework

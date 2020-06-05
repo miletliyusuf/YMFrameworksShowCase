@@ -7,87 +7,133 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00EFB0A19994CB4D8BEBD3726702A36A /* YMNetwork-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9063E87272ED1DEB952301560C8C83B2 /* YMNetwork-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D4978062BA77FEB92CD45A271EA6177 /* YMNetwork-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A910D99C192FD993EEF5866B1C0C264 /* YMNetwork-Swift-dummy.m */; };
-		0F9D36C7F3D1CFFB38B02985B9F79051 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4AF07242728A2CFFBD3B978B495D03 /* Configuration.swift */; };
-		242D9B79F14B49125912EFE1A8178A31 /* Pods-YMFrameworksShowCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CCA3077E014A45D1270D7BEF0D6960 /* Pods-YMFrameworksShowCase-dummy.m */; };
-		2B46191B2D0B69F072F792F14BDBABF6 /* UploadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D913F2F309CF6B0E5E6D31C644982C /* UploadRequest.swift */; };
-		3AF5159937A6470ED91039460829D029 /* Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0CAA1BE21F6D1333D25C058B4139F6 /* Encoding.swift */; };
-		437CE04437108BF8B4EA88D40CBAF668 /* VisionDetect-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ADD45C3C82377BA632A9A15AB8C014C /* VisionDetect-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		683AFE50F2DF46CA21AC2DFB94FC59FF /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002623A41BCAC411B6026CAC87C0C4E /* Response.swift */; };
-		6E1BA484C62B4EDE9CCE9A89CCC0CA6D /* YMDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44917E6B46F3858CECC2529444C56DD6 /* YMDownloadManager.swift */; };
-		7116C64D328DBF328205D82F9B3E73F1 /* YMNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = D1A93889F356C4DFD58485C883C8B910 /* YMNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00EFB0A19994CB4D8BEBD3726702A36A /* YMNetwork-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A049F94A27777E5234263A064CF8672 /* YMNetwork-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09144548867A9CFD4A6451FA03750B7B /* YMCirclePickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5148C8DCE82FC7FA35EA612F0B32922 /* YMCirclePickerModel.swift */; };
+		0D4978062BA77FEB92CD45A271EA6177 /* YMNetwork-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A401DAC2E76C8E4187598E5BB292F463 /* YMNetwork-Swift-dummy.m */; };
+		0F9D36C7F3D1CFFB38B02985B9F79051 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254EEC5EA6821339F3066641CC6CF23 /* Configuration.swift */; };
+		20A06257CC95611E754790415E23F658 /* YMCirclePickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CF3855677AFF241A4A49C243478464 /* YMCirclePickerCollectionViewCell.swift */; };
+		2B46191B2D0B69F072F792F14BDBABF6 /* UploadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB5D6F68390E3903EA3FD9CF4DCB98 /* UploadRequest.swift */; };
+		39AC50C92BAA583A8EC0B5D47D5B2D1A /* YMCirclePickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7D9D9AF9B8E40C7F3012372463A5C5B /* YMCirclePickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AF5159937A6470ED91039460829D029 /* Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A631AD93FE15D9F613405EA9FA3ED12D /* Encoding.swift */; };
+		3FD808C5C88BF7426154DA06CEDD1736 /* YMCirclePickerCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 4FDB3FA0AE197BDBD6786DD71340CFA3 /* YMCirclePickerCollectionViewCell.xib */; };
+		437CE04437108BF8B4EA88D40CBAF668 /* VisionDetect-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0E6206F0A7F968F0F4BDD2563BDF21 /* VisionDetect-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44A42B63FAAF53A0774E4F01BA021B98 /* YMCirclePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 873B1578E74EA13688B0C3FB324AD128 /* YMCirclePickerView.xib */; };
+		63A318C6400B877F83E2985CBE1A024C /* YMCirclePickerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FDB3FA0AE197BDBD6786DD71340CFA3 /* YMCirclePickerCollectionViewCell.xib */; };
+		683AFE50F2DF46CA21AC2DFB94FC59FF /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE1C78C34604F6610DD82B720D638EA /* Response.swift */; };
+		69AA6808C5E43B9B8ABACCFA22D0B82E /* YMCirclePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF888FF1FABEECDE45F56D7EF98554C /* YMCirclePickerView.swift */; };
+		6E1BA484C62B4EDE9CCE9A89CCC0CA6D /* YMDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8808F90F9A0C46B54F0A625A8A43527 /* YMDownloadManager.swift */; };
+		6E524D1EF74BFCF7D8489C9DC456615A /* YMCirclePickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7C21669B9B08C3F2BD74214D8338B3 /* YMCirclePickerView-dummy.m */; };
+		7116C64D328DBF328205D82F9B3E73F1 /* YMNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F680BA9E36D3780375B8C34737EFD50 /* YMNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72C7E761B9FD28693FC5F6156E538318 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7636DF6E3ADFF5FAD90795BB94F02070 /* YMCirclePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBA19176FCE36AA288016AE62612BEB /* YMCirclePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86A7F2CCABA1829E3048DEB314A8CB1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		88CD5E2DDDB1BBAB814DF501C8AB9251 /* YMNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386DBFB3171C80D996304961D34D2F4 /* YMNetwork.swift */; };
-		92CA8AAD1361918BBBB2A720CB1540B4 /* VisionDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218FD69625811D594E497A64CE8C4EE5 /* VisionDetect.swift */; };
-		97CE6E1B3DAE16486C14CE4F44E65504 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ADF8FBD290B3085AB9C6E674218E83 /* Service.swift */; };
-		A4317A432E5D1B7E67522EA94B9C19A4 /* VisionDetect.h in Headers */ = {isa = PBXBuildFile; fileRef = FB3E57C301D9735213A1C54983B693AF /* VisionDetect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A66428DCBB5D18C96B49B3C1B750BB2C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BF28FDD82077996897D9776327BE13 /* Request.swift */; };
-		B0E4C33C5C1C7970D83767A74F6A21D8 /* YMDownloadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A32B161C99F95F24614869B64A55E8 /* YMDownloadRequest.swift */; };
-		B4B7D9117C1DC7F688F62C37A28C496E /* VisionDetect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3492A6B23F65D0CA8588D24DE36A10D4 /* VisionDetect-dummy.m */; };
+		88CD5E2DDDB1BBAB814DF501C8AB9251 /* YMNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CD5DD19D4016B8CA46CBEB3CDFEDBA /* YMNetwork.swift */; };
+		92CA8AAD1361918BBBB2A720CB1540B4 /* VisionDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B904F48F78DC3C37CF0FDED45D5BD983 /* VisionDetect.swift */; };
+		97CE6E1B3DAE16486C14CE4F44E65504 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389F50A419D6D7E2F1CBBD65B192D39C /* Service.swift */; };
+		A0234CD748ECDAB1D49A74C1C59A7993 /* Pods-YMFrameworksShowCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CCA3077E014A45D1270D7BEF0D6960 /* Pods-YMFrameworksShowCase-dummy.m */; };
+		A4317A432E5D1B7E67522EA94B9C19A4 /* VisionDetect.h in Headers */ = {isa = PBXBuildFile; fileRef = F45E49E0F99494250BC4E6511F77AD43 /* VisionDetect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A66428DCBB5D18C96B49B3C1B750BB2C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91F07E8178A3DD267A8EC7E29497FAC /* Request.swift */; };
+		B0E4C33C5C1C7970D83767A74F6A21D8 /* YMDownloadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EB062A655F893CD8CF87E6C7153C39 /* YMDownloadRequest.swift */; };
+		B4B7D9117C1DC7F688F62C37A28C496E /* VisionDetect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40823F59A4F252FC53571FDC6402BE2A /* VisionDetect-dummy.m */; };
 		B984765102E3CF529FCBDD46859827A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		BB90D0026F86D10AB8110E871E0D2091 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FED2D57B9983C1F193A2014B4E3AD08F /* Pods-YMFrameworksShowCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8CD162BA142308FAB1EBA4AAE7F017 /* Pods-YMFrameworksShowCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAB5AA90C8A67BF4D658F19C79791BE9 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8329B10B593F5FC0FDAECBB342F59 /* NibLoadable.swift */; };
+		E207B664F5C66C8187FDC95FC6EFFAB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E41093AE55AB90CF9E5E9124963D9B8D /* Pods-YMFrameworksShowCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8CD162BA142308FAB1EBA4AAE7F017 /* Pods-YMFrameworksShowCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5ED1EA9E660BDEA831C49739BA60899 /* YMCirclePickerView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 873B1578E74EA13688B0C3FB324AD128 /* YMCirclePickerView.xib */; };
+		F279C96BF1C7D984999C3E919F08D965 /* YMCirclePickerViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A6C7E68DDFB9430323ED7BA7D32674 /* YMCirclePickerViewLayout.swift */; };
+		F6AAD0C73323537CEAEDA63530AFD182 /* YMCirclePickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0640F10E8D66208F1C2AF03FB8AB0FD3 /* YMCirclePickerView.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3406892A506123058C60C19751FA866E /* PBXContainerItemProxy */ = {
+		26E8C6D75802C854DFAB6E6B6C81E1F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 78C0F6924F44713B52C9F8E02EAE5B70;
 			remoteInfo = "YMNetwork-Swift";
 		};
-		E240E11DD1BE5B0F5192641B4D5C006B /* PBXContainerItemProxy */ = {
+		78CC2891829A9F7938473DA6409DDC6A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E6B1A17BEA611CC15E31FFBB5DC30D83;
 			remoteInfo = VisionDetect;
 		};
+		7B818DF39483396CD6710D00BC8C7338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4838BF31C35B9A32C35BA6D78E115314;
+			remoteInfo = "YMCirclePickerView-YMCirclePickerView";
+		};
+		B633C523F7B375DE5EE4BD26C0D95422 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D851FA63F73299277E1E653D6C18475C;
+			remoteInfo = YMCirclePickerView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00C2170FE044386889EDF0A7286CF267 /* Pods-YMFrameworksShowCase-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YMFrameworksShowCase-frameworks.sh"; sourceTree = "<group>"; };
+		0640F10E8D66208F1C2AF03FB8AB0FD3 /* YMCirclePickerView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = YMCirclePickerView.bundle; path = "YMCirclePickerView-YMCirclePickerView.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0836AA95257E82F33C36E190A2E390D0 /* Pods-YMFrameworksShowCase-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YMFrameworksShowCase-acknowledgements.markdown"; sourceTree = "<group>"; };
 		08BA34223FAAE5173BB71D07CCE120F2 /* Pods_YMFrameworksShowCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YMFrameworksShowCase.framework; path = "Pods-YMFrameworksShowCase.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		12ADF8FBD290B3085AB9C6E674218E83 /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = YMNetwork/Service/Service.swift; sourceTree = "<group>"; };
-		1FF7C76DC270B78B0F5BCEDC34E4BFD5 /* YMNetwork-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YMNetwork-Swift-Info.plist"; sourceTree = "<group>"; };
-		218FD69625811D594E497A64CE8C4EE5 /* VisionDetect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VisionDetect.swift; path = VisionDetect/VisionDetect.swift; sourceTree = "<group>"; };
-		21D913F2F309CF6B0E5E6D31C644982C /* UploadRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UploadRequest.swift; path = YMNetwork/Models/UploadRequest.swift; sourceTree = "<group>"; };
-		24F08DFFB6990FDF2AEC37076788205D /* YMNetwork-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "YMNetwork-Swift.modulemap"; sourceTree = "<group>"; };
-		2A910D99C192FD993EEF5866B1C0C264 /* YMNetwork-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YMNetwork-Swift-dummy.m"; sourceTree = "<group>"; };
+		0A0E6206F0A7F968F0F4BDD2563BDF21 /* VisionDetect-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VisionDetect-umbrella.h"; sourceTree = "<group>"; };
+		0A565793BEA1967B9788C9A45850EF50 /* YMNetwork-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YMNetwork-Swift-prefix.pch"; sourceTree = "<group>"; };
+		0BE8329B10B593F5FC0FDAECBB342F59 /* NibLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibLoadable.swift; path = YMCirclePickerView/Utils/NibLoadable.swift; sourceTree = "<group>"; };
+		12263C87A015D5CEF8D13423CA3EF74D /* ResourceBundle-YMCirclePickerView-YMCirclePickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-YMCirclePickerView-YMCirclePickerView-Info.plist"; sourceTree = "<group>"; };
+		2A7C21669B9B08C3F2BD74214D8338B3 /* YMCirclePickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YMCirclePickerView-dummy.m"; sourceTree = "<group>"; };
+		2D6F81A134D8B1D4B3DC774AE29C12D8 /* VisionDetect-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VisionDetect-Info.plist"; sourceTree = "<group>"; };
+		2DF888FF1FABEECDE45F56D7EF98554C /* YMCirclePickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YMCirclePickerView.swift; path = YMCirclePickerView/Views/YMCirclePickerView/YMCirclePickerView.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3492A6B23F65D0CA8588D24DE36A10D4 /* VisionDetect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VisionDetect-dummy.m"; sourceTree = "<group>"; };
-		3914BF2F3FB5F9BA5748528FA6F9F4BC /* VisionDetect-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VisionDetect-prefix.pch"; sourceTree = "<group>"; };
-		42F6920328C6DCC60BA263258B9D7A24 /* YMNetwork-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "YMNetwork-Swift.release.xcconfig"; sourceTree = "<group>"; };
-		44917E6B46F3858CECC2529444C56DD6 /* YMDownloadManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YMDownloadManager.swift; path = YMNetwork/Managers/YMDownloadManager.swift; sourceTree = "<group>"; };
+		33BB5D6F68390E3903EA3FD9CF4DCB98 /* UploadRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UploadRequest.swift; path = YMNetwork/Models/UploadRequest.swift; sourceTree = "<group>"; };
+		37CD5DD19D4016B8CA46CBEB3CDFEDBA /* YMNetwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YMNetwork.swift; path = YMNetwork/YMNetwork.swift; sourceTree = "<group>"; };
+		389F50A419D6D7E2F1CBBD65B192D39C /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = YMNetwork/Service/Service.swift; sourceTree = "<group>"; };
+		38CF3855677AFF241A4A49C243478464 /* YMCirclePickerCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YMCirclePickerCollectionViewCell.swift; path = YMCirclePickerView/Views/YMCirclePickerView/Cells/YMCirclePickerCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A049F94A27777E5234263A064CF8672 /* YMNetwork-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YMNetwork-Swift-umbrella.h"; sourceTree = "<group>"; };
+		40823F59A4F252FC53571FDC6402BE2A /* VisionDetect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VisionDetect-dummy.m"; sourceTree = "<group>"; };
+		45A6C7E68DDFB9430323ED7BA7D32674 /* YMCirclePickerViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YMCirclePickerViewLayout.swift; path = YMCirclePickerView/Layout/YMCirclePickerViewLayout.swift; sourceTree = "<group>"; };
+		47EB062A655F893CD8CF87E6C7153C39 /* YMDownloadRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YMDownloadRequest.swift; path = YMNetwork/Models/YMDownloadRequest.swift; sourceTree = "<group>"; };
 		4A8F0CF87517099FD7CA887D8005144A /* Pods-YMFrameworksShowCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YMFrameworksShowCase-Info.plist"; sourceTree = "<group>"; };
-		5E04FB1C126EE28AD7CF6AC7C8D94AE5 /* YMNetwork-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "YMNetwork-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		4FDB3FA0AE197BDBD6786DD71340CFA3 /* YMCirclePickerCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = YMCirclePickerCollectionViewCell.xib; path = YMCirclePickerView/Views/YMCirclePickerView/Cells/YMCirclePickerCollectionViewCell.xib; sourceTree = "<group>"; };
+		5236AC289DCA2F14756EC06BA67FCA8B /* YMCirclePickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YMCirclePickerView.framework; path = YMCirclePickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F1E2C83A93A7A6CF2D37652894BDF1 /* YMNetwork-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YMNetwork-Swift-Info.plist"; sourceTree = "<group>"; };
+		539ABB5DF96F2053EC203C70C4382835 /* VisionDetect.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VisionDetect.modulemap; sourceTree = "<group>"; };
+		5623B8057D62A7912EE19648979C1A9C /* YMNetwork-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "YMNetwork-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		58B9791B72CBC9730099E66AB5964ED4 /* YMNetwork-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "YMNetwork-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		63CCA3077E014A45D1270D7BEF0D6960 /* Pods-YMFrameworksShowCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YMFrameworksShowCase-dummy.m"; sourceTree = "<group>"; };
-		664072C478EBECC13CD47273C4D29BED /* VisionDetect.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VisionDetect.modulemap; sourceTree = "<group>"; };
+		6F680BA9E36D3780375B8C34737EFD50 /* YMNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMNetwork.h; path = YMNetwork/YMNetwork.h; sourceTree = "<group>"; };
 		7181FA054DF5C17A2CBD00566BBD95EC /* VisionDetect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VisionDetect.framework; path = VisionDetect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7702FFC018ACCB63DEF250BD2242D640 /* YMNetwork_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YMNetwork_Swift.framework; path = "YMNetwork-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8386DBFB3171C80D996304961D34D2F4 /* YMNetwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YMNetwork.swift; path = YMNetwork/YMNetwork.swift; sourceTree = "<group>"; };
-		9063E87272ED1DEB952301560C8C83B2 /* YMNetwork-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YMNetwork-Swift-umbrella.h"; sourceTree = "<group>"; };
+		873B1578E74EA13688B0C3FB324AD128 /* YMCirclePickerView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = YMCirclePickerView.xib; path = YMCirclePickerView/Views/YMCirclePickerView/YMCirclePickerView.xib; sourceTree = "<group>"; };
+		8FBA19176FCE36AA288016AE62612BEB /* YMCirclePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMCirclePickerView.h; path = YMCirclePickerView/YMCirclePickerView.h; sourceTree = "<group>"; };
+		910332DF2C1B2A0F86516C735F8C2BE8 /* VisionDetect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VisionDetect.release.xcconfig; sourceTree = "<group>"; };
+		945F538DB9ED81D362362174A457EBB5 /* YMCirclePickerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YMCirclePickerView.debug.xcconfig; sourceTree = "<group>"; };
 		9A8CD162BA142308FAB1EBA4AAE7F017 /* Pods-YMFrameworksShowCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YMFrameworksShowCase-umbrella.h"; sourceTree = "<group>"; };
-		9ADD45C3C82377BA632A9A15AB8C014C /* VisionDetect-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VisionDetect-umbrella.h"; sourceTree = "<group>"; };
+		9AE1C78C34604F6610DD82B720D638EA /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = YMNetwork/Models/Response.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DC07F4A1A95D92FCD563848C8F84040 /* VisionDetect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VisionDetect.debug.xcconfig; sourceTree = "<group>"; };
-		AC4AF07242728A2CFFBD3B978B495D03 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = YMNetwork/Service/Configuration.swift; sourceTree = "<group>"; };
-		B7C609A1CD71508A6259778F7172A788 /* YMNetwork-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YMNetwork-Swift-prefix.pch"; sourceTree = "<group>"; };
-		C2A32B161C99F95F24614869B64A55E8 /* YMDownloadRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YMDownloadRequest.swift; path = YMNetwork/Models/YMDownloadRequest.swift; sourceTree = "<group>"; };
+		A401DAC2E76C8E4187598E5BB292F463 /* YMNetwork-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YMNetwork-Swift-dummy.m"; sourceTree = "<group>"; };
+		A5148C8DCE82FC7FA35EA612F0B32922 /* YMCirclePickerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YMCirclePickerModel.swift; path = YMCirclePickerView/Model/YMCirclePickerModel.swift; sourceTree = "<group>"; };
+		A631AD93FE15D9F613405EA9FA3ED12D /* Encoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoding.swift; path = YMNetwork/Encoding/Encoding.swift; sourceTree = "<group>"; };
+		A8808F90F9A0C46B54F0A625A8A43527 /* YMDownloadManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YMDownloadManager.swift; path = YMNetwork/Managers/YMDownloadManager.swift; sourceTree = "<group>"; };
+		B0677A034EAE761B4C3B3A0F7471E83D /* YMCirclePickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YMCirclePickerView.modulemap; sourceTree = "<group>"; };
+		B5CAE3FE2B0D9EC2F813D340CC0D56BE /* VisionDetect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VisionDetect.debug.xcconfig; sourceTree = "<group>"; };
+		B904F48F78DC3C37CF0FDED45D5BD983 /* VisionDetect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VisionDetect.swift; path = VisionDetect/VisionDetect.swift; sourceTree = "<group>"; };
+		C254EEC5EA6821339F3066641CC6CF23 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = YMNetwork/Service/Configuration.swift; sourceTree = "<group>"; };
 		C2FBFAF360B2F86CF0C9FD85A60A6260 /* Pods-YMFrameworksShowCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YMFrameworksShowCase.release.xcconfig"; sourceTree = "<group>"; };
-		C5BF28FDD82077996897D9776327BE13 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = YMNetwork/Models/Request.swift; sourceTree = "<group>"; };
-		C96E8F7E55811CC3A195BB1119A78CE4 /* VisionDetect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VisionDetect.release.xcconfig; sourceTree = "<group>"; };
-		D1A93889F356C4DFD58485C883C8B910 /* YMNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMNetwork.h; path = YMNetwork/YMNetwork.h; sourceTree = "<group>"; };
+		C7D9D9AF9B8E40C7F3012372463A5C5B /* YMCirclePickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YMCirclePickerView-umbrella.h"; sourceTree = "<group>"; };
+		C9C9AF00B5A06358E3393915734DB6EE /* YMCirclePickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YMCirclePickerView-Info.plist"; sourceTree = "<group>"; };
 		D4958372106685D5482299BCB29F27BF /* Pods-YMFrameworksShowCase-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YMFrameworksShowCase-acknowledgements.plist"; sourceTree = "<group>"; };
-		DC0CAA1BE21F6D1333D25C058B4139F6 /* Encoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoding.swift; path = YMNetwork/Encoding/Encoding.swift; sourceTree = "<group>"; };
 		E72C962F23139C7EDF21082EF7B185EB /* Pods-YMFrameworksShowCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YMFrameworksShowCase.debug.xcconfig"; sourceTree = "<group>"; };
-		EB89B16ED9616D7382A412144DB64364 /* VisionDetect-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VisionDetect-Info.plist"; sourceTree = "<group>"; };
-		F002623A41BCAC411B6026CAC87C0C4E /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = YMNetwork/Models/Response.swift; sourceTree = "<group>"; };
+		E91F07E8178A3DD267A8EC7E29497FAC /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = YMNetwork/Models/Request.swift; sourceTree = "<group>"; };
+		F38D48EFF428881C6AA04D32F17B3F85 /* VisionDetect-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VisionDetect-prefix.pch"; sourceTree = "<group>"; };
+		F45E49E0F99494250BC4E6511F77AD43 /* VisionDetect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VisionDetect.h; path = VisionDetect/VisionDetect.h; sourceTree = "<group>"; };
 		F4D7D1383A70F66331EAB8E9BE2A5D58 /* Pods-YMFrameworksShowCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YMFrameworksShowCase.modulemap"; sourceTree = "<group>"; };
-		FB3E57C301D9735213A1C54983B693AF /* VisionDetect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VisionDetect.h; path = VisionDetect/VisionDetect.h; sourceTree = "<group>"; };
+		FC0F3A65169D73730694080702A95CB8 /* YMNetwork-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "YMNetwork-Swift.modulemap"; sourceTree = "<group>"; };
+		FDA6C480B35C2D5B878709F58F1ADD26 /* YMCirclePickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YMCirclePickerView-prefix.pch"; sourceTree = "<group>"; };
+		FE76ED4A649C73A2AFC0D5803A418BC1 /* YMCirclePickerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YMCirclePickerView.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +145,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE220A623930936F9B0FE6E15482378C /* Frameworks */ = {
+		87F11364311D0A16A157AB3ACA4F55CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB90D0026F86D10AB8110E871E0D2091 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,26 +160,72 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C47227583DF21B434E8E66438AC8DE7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72C7E761B9FD28693FC5F6156E538318 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C83F072BB6FC998B1EB542B74481B3FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E207B664F5C66C8187FDC95FC6EFFAB5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		216F961338D40B29E930AD9B0981F350 /* YMNetwork-Swift */ = {
+		2202E5EE251292ED9F6A3E62360C446C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AC4AF07242728A2CFFBD3B978B495D03 /* Configuration.swift */,
-				DC0CAA1BE21F6D1333D25C058B4139F6 /* Encoding.swift */,
-				C5BF28FDD82077996897D9776327BE13 /* Request.swift */,
-				F002623A41BCAC411B6026CAC87C0C4E /* Response.swift */,
-				12ADF8FBD290B3085AB9C6E674218E83 /* Service.swift */,
-				21D913F2F309CF6B0E5E6D31C644982C /* UploadRequest.swift */,
-				44917E6B46F3858CECC2529444C56DD6 /* YMDownloadManager.swift */,
-				C2A32B161C99F95F24614869B64A55E8 /* YMDownloadRequest.swift */,
-				D1A93889F356C4DFD58485C883C8B910 /* YMNetwork.h */,
-				8386DBFB3171C80D996304961D34D2F4 /* YMNetwork.swift */,
-				BCA578678ADD1351ED8016E213E86477 /* Support Files */,
+				FC0F3A65169D73730694080702A95CB8 /* YMNetwork-Swift.modulemap */,
+				A401DAC2E76C8E4187598E5BB292F463 /* YMNetwork-Swift-dummy.m */,
+				52F1E2C83A93A7A6CF2D37652894BDF1 /* YMNetwork-Swift-Info.plist */,
+				0A565793BEA1967B9788C9A45850EF50 /* YMNetwork-Swift-prefix.pch */,
+				3A049F94A27777E5234263A064CF8672 /* YMNetwork-Swift-umbrella.h */,
+				5623B8057D62A7912EE19648979C1A9C /* YMNetwork-Swift.debug.xcconfig */,
+				58B9791B72CBC9730099E66AB5964ED4 /* YMNetwork-Swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YMNetwork-Swift";
+			sourceTree = "<group>";
+		};
+		37054BA5E3B66356781DB64D9D31D70D /* YMNetwork-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				C254EEC5EA6821339F3066641CC6CF23 /* Configuration.swift */,
+				A631AD93FE15D9F613405EA9FA3ED12D /* Encoding.swift */,
+				E91F07E8178A3DD267A8EC7E29497FAC /* Request.swift */,
+				9AE1C78C34604F6610DD82B720D638EA /* Response.swift */,
+				389F50A419D6D7E2F1CBBD65B192D39C /* Service.swift */,
+				33BB5D6F68390E3903EA3FD9CF4DCB98 /* UploadRequest.swift */,
+				A8808F90F9A0C46B54F0A625A8A43527 /* YMDownloadManager.swift */,
+				47EB062A655F893CD8CF87E6C7153C39 /* YMDownloadRequest.swift */,
+				6F680BA9E36D3780375B8C34737EFD50 /* YMNetwork.h */,
+				37CD5DD19D4016B8CA46CBEB3CDFEDBA /* YMNetwork.swift */,
+				2202E5EE251292ED9F6A3E62360C446C /* Support Files */,
 			);
 			name = "YMNetwork-Swift";
 			path = "YMNetwork-Swift";
+			sourceTree = "<group>";
+		};
+		4378EBC1CC52CC979C6A73943A8D6C07 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				539ABB5DF96F2053EC203C70C4382835 /* VisionDetect.modulemap */,
+				40823F59A4F252FC53571FDC6402BE2A /* VisionDetect-dummy.m */,
+				2D6F81A134D8B1D4B3DC774AE29C12D8 /* VisionDetect-Info.plist */,
+				F38D48EFF428881C6AA04D32F17B3F85 /* VisionDetect-prefix.pch */,
+				0A0E6206F0A7F968F0F4BDD2563BDF21 /* VisionDetect-umbrella.h */,
+				B5CAE3FE2B0D9EC2F813D340CC0D56BE /* VisionDetect.debug.xcconfig */,
+				910332DF2C1B2A0F86516C735F8C2BE8 /* VisionDetect.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VisionDetect";
 			sourceTree = "<group>";
 		};
 		4D1CE12205855B028D2624516EFAF7DB /* Targets Support Files */ = {
@@ -145,44 +236,57 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4EBABE28417CBF2816A81EB6D1A36026 /* Support Files */ = {
+		506CEC9FAEC8452C6AA462B5DD0C662D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				664072C478EBECC13CD47273C4D29BED /* VisionDetect.modulemap */,
-				3492A6B23F65D0CA8588D24DE36A10D4 /* VisionDetect-dummy.m */,
-				EB89B16ED9616D7382A412144DB64364 /* VisionDetect-Info.plist */,
-				3914BF2F3FB5F9BA5748528FA6F9F4BC /* VisionDetect-prefix.pch */,
-				9ADD45C3C82377BA632A9A15AB8C014C /* VisionDetect-umbrella.h */,
-				9DC07F4A1A95D92FCD563848C8F84040 /* VisionDetect.debug.xcconfig */,
-				C96E8F7E55811CC3A195BB1119A78CE4 /* VisionDetect.release.xcconfig */,
+				12263C87A015D5CEF8D13423CA3EF74D /* ResourceBundle-YMCirclePickerView-YMCirclePickerView-Info.plist */,
+				B0677A034EAE761B4C3B3A0F7471E83D /* YMCirclePickerView.modulemap */,
+				2A7C21669B9B08C3F2BD74214D8338B3 /* YMCirclePickerView-dummy.m */,
+				C9C9AF00B5A06358E3393915734DB6EE /* YMCirclePickerView-Info.plist */,
+				FDA6C480B35C2D5B878709F58F1ADD26 /* YMCirclePickerView-prefix.pch */,
+				C7D9D9AF9B8E40C7F3012372463A5C5B /* YMCirclePickerView-umbrella.h */,
+				945F538DB9ED81D362362174A457EBB5 /* YMCirclePickerView.debug.xcconfig */,
+				FE76ED4A649C73A2AFC0D5803A418BC1 /* YMCirclePickerView.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/VisionDetect";
+			path = "../Target Support Files/YMCirclePickerView";
 			sourceTree = "<group>";
 		};
-		A69514C4B651FB868AB0749A848031D3 /* Products */ = {
+		92087C066B28FB4F78CA37B3C294ED56 /* YMCirclePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8329B10B593F5FC0FDAECBB342F59 /* NibLoadable.swift */,
+				38CF3855677AFF241A4A49C243478464 /* YMCirclePickerCollectionViewCell.swift */,
+				4FDB3FA0AE197BDBD6786DD71340CFA3 /* YMCirclePickerCollectionViewCell.xib */,
+				A5148C8DCE82FC7FA35EA612F0B32922 /* YMCirclePickerModel.swift */,
+				8FBA19176FCE36AA288016AE62612BEB /* YMCirclePickerView.h */,
+				2DF888FF1FABEECDE45F56D7EF98554C /* YMCirclePickerView.swift */,
+				873B1578E74EA13688B0C3FB324AD128 /* YMCirclePickerView.xib */,
+				45A6C7E68DDFB9430323ED7BA7D32674 /* YMCirclePickerViewLayout.swift */,
+				BC6D0E1875DB8BDD000FB68E94205242 /* Resources */,
+				506CEC9FAEC8452C6AA462B5DD0C662D /* Support Files */,
+			);
+			name = YMCirclePickerView;
+			path = YMCirclePickerView;
+			sourceTree = "<group>";
+		};
+		96E676CDE8210BB8C83D379657A6A34D /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				08BA34223FAAE5173BB71D07CCE120F2 /* Pods_YMFrameworksShowCase.framework */,
 				7181FA054DF5C17A2CBD00566BBD95EC /* VisionDetect.framework */,
+				0640F10E8D66208F1C2AF03FB8AB0FD3 /* YMCirclePickerView.bundle */,
+				5236AC289DCA2F14756EC06BA67FCA8B /* YMCirclePickerView.framework */,
 				7702FFC018ACCB63DEF250BD2242D640 /* YMNetwork_Swift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BCA578678ADD1351ED8016E213E86477 /* Support Files */ = {
+		BC6D0E1875DB8BDD000FB68E94205242 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				24F08DFFB6990FDF2AEC37076788205D /* YMNetwork-Swift.modulemap */,
-				2A910D99C192FD993EEF5866B1C0C264 /* YMNetwork-Swift-dummy.m */,
-				1FF7C76DC270B78B0F5BCEDC34E4BFD5 /* YMNetwork-Swift-Info.plist */,
-				B7C609A1CD71508A6259778F7172A788 /* YMNetwork-Swift-prefix.pch */,
-				9063E87272ED1DEB952301560C8C83B2 /* YMNetwork-Swift-umbrella.h */,
-				5E04FB1C126EE28AD7CF6AC7C8D94AE5 /* YMNetwork-Swift.debug.xcconfig */,
-				42F6920328C6DCC60BA263258B9D7A24 /* YMNetwork-Swift.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/YMNetwork-Swift";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -193,15 +297,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CAADC7AB3195FD9A8BD8AE1FF4DC6393 /* VisionDetect */ = {
+		C35D74A4BDA323F5564A262D28819008 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FB3E57C301D9735213A1C54983B693AF /* VisionDetect.h */,
-				218FD69625811D594E497A64CE8C4EE5 /* VisionDetect.swift */,
-				4EBABE28417CBF2816A81EB6D1A36026 /* Support Files */,
+				CFBEE064752520E9BBEF4D67D835987B /* VisionDetect */,
+				92087C066B28FB4F78CA37B3C294ED56 /* YMCirclePickerView */,
+				37054BA5E3B66356781DB64D9D31D70D /* YMNetwork-Swift */,
 			);
-			name = VisionDetect;
-			path = VisionDetect;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -209,10 +312,21 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				FAFC30FA72A54FD0D98FD10F32CA63C4 /* Pods */,
-				A69514C4B651FB868AB0749A848031D3 /* Products */,
+				C35D74A4BDA323F5564A262D28819008 /* Pods */,
+				96E676CDE8210BB8C83D379657A6A34D /* Products */,
 				4D1CE12205855B028D2624516EFAF7DB /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		CFBEE064752520E9BBEF4D67D835987B /* VisionDetect */ = {
+			isa = PBXGroup;
+			children = (
+				F45E49E0F99494250BC4E6511F77AD43 /* VisionDetect.h */,
+				B904F48F78DC3C37CF0FDED45D5BD983 /* VisionDetect.swift */,
+				4378EBC1CC52CC979C6A73943A8D6C07 /* Support Files */,
+			);
+			name = VisionDetect;
+			path = VisionDetect;
 			sourceTree = "<group>";
 		};
 		D04BA6CDD370BD8A4D725AA031552203 /* Pods-YMFrameworksShowCase */ = {
@@ -240,15 +354,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FAFC30FA72A54FD0D98FD10F32CA63C4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CAADC7AB3195FD9A8BD8AE1FF4DC6393 /* VisionDetect */,
-				216F961338D40B29E930AD9B0981F350 /* YMNetwork-Swift */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -261,6 +366,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		436D3B5F029DA7E7B483F4E99B5E912C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41093AE55AB90CF9E5E9124963D9B8D /* Pods-YMFrameworksShowCase-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6618A02ED41EBA330526B705943C6FA5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39AC50C92BAA583A8EC0B5D47D5B2D1A /* YMCirclePickerView-umbrella.h in Headers */,
+				7636DF6E3ADFF5FAD90795BB94F02070 /* YMCirclePickerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74A92748E3FD1E2EA6EC048FFACEFABD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,36 +392,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		90EDCE88284EB3B0DCF3C503964EC7BB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FED2D57B9983C1F193A2014B4E3AD08F /* Pods-YMFrameworksShowCase-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		0BF7801FE5D4752E02F96F6D743E7E57 /* Pods-YMFrameworksShowCase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C624790CE1918EADAB6FF37E5A5E794E /* Build configuration list for PBXNativeTarget "Pods-YMFrameworksShowCase" */;
+			buildConfigurationList = 32A4E0ECD77400B00A7A2EBD10869053 /* Build configuration list for PBXNativeTarget "Pods-YMFrameworksShowCase" */;
 			buildPhases = (
-				90EDCE88284EB3B0DCF3C503964EC7BB /* Headers */,
-				D737913FF6F33638A24D2EED5DC6A6E3 /* Sources */,
-				AE220A623930936F9B0FE6E15482378C /* Frameworks */,
-				4A006B9C7A91B6F20450E27720501086 /* Resources */,
+				436D3B5F029DA7E7B483F4E99B5E912C /* Headers */,
+				6F811C70EC4B83815CC163E570E8D2F9 /* Sources */,
+				C47227583DF21B434E8E66438AC8DE7D /* Frameworks */,
+				308A6E14C57EBE56E0A83C124B3156E4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				409C963B3F41FC41F4CD1DA9E7F79736 /* PBXTargetDependency */,
-				E85679B78659A7191DE1407220D155FD /* PBXTargetDependency */,
+				9FB0554464F50CD9F6F119DA5B483690 /* PBXTargetDependency */,
+				09CF8EEC39A399A826E09DA138A15179 /* PBXTargetDependency */,
+				DF5F254DD7D24A8A75DB11F663592D88 /* PBXTargetDependency */,
 			);
 			name = "Pods-YMFrameworksShowCase";
 			productName = "Pods-YMFrameworksShowCase";
 			productReference = 08BA34223FAAE5173BB71D07CCE120F2 /* Pods_YMFrameworksShowCase.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		4838BF31C35B9A32C35BA6D78E115314 /* YMCirclePickerView-YMCirclePickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49FA20E52CAF94C91B8BE5AB68E7DB18 /* Build configuration list for PBXNativeTarget "YMCirclePickerView-YMCirclePickerView" */;
+			buildPhases = (
+				AC438939BF708B0D506FCEB563827B2F /* Sources */,
+				87F11364311D0A16A157AB3ACA4F55CC /* Frameworks */,
+				9C6C0F25DB46D571C95430BE2CB8DAE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YMCirclePickerView-YMCirclePickerView";
+			productName = "YMCirclePickerView-YMCirclePickerView";
+			productReference = 0640F10E8D66208F1C2AF03FB8AB0FD3 /* YMCirclePickerView.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		78C0F6924F44713B52C9F8E02EAE5B70 /* YMNetwork-Swift */ = {
 			isa = PBXNativeTarget;
@@ -317,6 +449,25 @@
 			name = "YMNetwork-Swift";
 			productName = "YMNetwork-Swift";
 			productReference = 7702FFC018ACCB63DEF250BD2242D640 /* YMNetwork_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D851FA63F73299277E1E653D6C18475C /* YMCirclePickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDA047A773A5795C449DFB553F2A839 /* Build configuration list for PBXNativeTarget "YMCirclePickerView" */;
+			buildPhases = (
+				6618A02ED41EBA330526B705943C6FA5 /* Headers */,
+				1CBFC8F577FD0FD3001459FC23563405 /* Sources */,
+				C83F072BB6FC998B1EB542B74481B3FD /* Frameworks */,
+				6A5F60F9E677320503F8AA5474D442B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F69B99D6066C0FF611EFCBF304F9C63 /* PBXTargetDependency */,
+			);
+			name = YMCirclePickerView;
+			productName = YMCirclePickerView;
+			productReference = 5236AC289DCA2F14756EC06BA67FCA8B /* YMCirclePickerView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E6B1A17BEA611CC15E31FFBB5DC30D83 /* VisionDetect */ = {
@@ -355,19 +506,21 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = A69514C4B651FB868AB0749A848031D3 /* Products */;
+			productRefGroup = 96E676CDE8210BB8C83D379657A6A34D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0BF7801FE5D4752E02F96F6D743E7E57 /* Pods-YMFrameworksShowCase */,
 				E6B1A17BEA611CC15E31FFBB5DC30D83 /* VisionDetect */,
+				D851FA63F73299277E1E653D6C18475C /* YMCirclePickerView */,
+				4838BF31C35B9A32C35BA6D78E115314 /* YMCirclePickerView-YMCirclePickerView */,
 				78C0F6924F44713B52C9F8E02EAE5B70 /* YMNetwork-Swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4A006B9C7A91B6F20450E27720501086 /* Resources */ = {
+		308A6E14C57EBE56E0A83C124B3156E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -381,6 +534,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A5F60F9E677320503F8AA5474D442B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6AAD0C73323537CEAEDA63530AFD182 /* YMCirclePickerView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C6C0F25DB46D571C95430BE2CB8DAE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A318C6400B877F83E2985CBE1A024C /* YMCirclePickerCollectionViewCell.xib in Resources */,
+				44A42B63FAAF53A0774E4F01BA021B98 /* YMCirclePickerView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD58364D251D51B59C77A33327A9F71C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,6 +561,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1CBFC8F577FD0FD3001459FC23563405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB5AA90C8A67BF4D658F19C79791BE9 /* NibLoadable.swift in Sources */,
+				20A06257CC95611E754790415E23F658 /* YMCirclePickerCollectionViewCell.swift in Sources */,
+				3FD808C5C88BF7426154DA06CEDD1736 /* YMCirclePickerCollectionViewCell.xib in Sources */,
+				09144548867A9CFD4A6451FA03750B7B /* YMCirclePickerModel.swift in Sources */,
+				6E524D1EF74BFCF7D8489C9DC456615A /* YMCirclePickerView-dummy.m in Sources */,
+				69AA6808C5E43B9B8ABACCFA22D0B82E /* YMCirclePickerView.swift in Sources */,
+				E5ED1EA9E660BDEA831C49739BA60899 /* YMCirclePickerView.xib in Sources */,
+				F279C96BF1C7D984999C3E919F08D965 /* YMCirclePickerViewLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F811C70EC4B83815CC163E570E8D2F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0234CD748ECDAB1D49A74C1C59A7993 /* Pods-YMFrameworksShowCase-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		894A674AD3C39E8DE0C87ECA4742CE92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,35 +610,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D737913FF6F33638A24D2EED5DC6A6E3 /* Sources */ = {
+		AC438939BF708B0D506FCEB563827B2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				242D9B79F14B49125912EFE1A8178A31 /* Pods-YMFrameworksShowCase-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		409C963B3F41FC41F4CD1DA9E7F79736 /* PBXTargetDependency */ = {
+		09CF8EEC39A399A826E09DA138A15179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YMCirclePickerView;
+			target = D851FA63F73299277E1E653D6C18475C /* YMCirclePickerView */;
+			targetProxy = B633C523F7B375DE5EE4BD26C0D95422 /* PBXContainerItemProxy */;
+		};
+		8F69B99D6066C0FF611EFCBF304F9C63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "YMCirclePickerView-YMCirclePickerView";
+			target = 4838BF31C35B9A32C35BA6D78E115314 /* YMCirclePickerView-YMCirclePickerView */;
+			targetProxy = 7B818DF39483396CD6710D00BC8C7338 /* PBXContainerItemProxy */;
+		};
+		9FB0554464F50CD9F6F119DA5B483690 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = VisionDetect;
 			target = E6B1A17BEA611CC15E31FFBB5DC30D83 /* VisionDetect */;
-			targetProxy = E240E11DD1BE5B0F5192641B4D5C006B /* PBXContainerItemProxy */;
+			targetProxy = 78CC2891829A9F7938473DA6409DDC6A /* PBXContainerItemProxy */;
 		};
-		E85679B78659A7191DE1407220D155FD /* PBXTargetDependency */ = {
+		DF5F254DD7D24A8A75DB11F663592D88 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "YMNetwork-Swift";
 			target = 78C0F6924F44713B52C9F8E02EAE5B70 /* YMNetwork-Swift */;
-			targetProxy = 3406892A506123058C60C19751FA866E /* PBXContainerItemProxy */;
+			targetProxy = 26E8C6D75802C854DFAB6E6B6C81E1F8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		02EFC036FE88D99371245A16EC7CC339 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C96E8F7E55811CC3A195BB1119A78CE4 /* VisionDetect.release.xcconfig */;
+			baseConfigurationReference = 910332DF2C1B2A0F86516C735F8C2BE8 /* VisionDetect.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -480,9 +684,45 @@
 			};
 			name = Release;
 		};
-		191D7E0D0438FFA7A28B3E2478A277E6 /* Debug */ = {
+		074571AC5ED3746FDC58660F2015692F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E72C962F23139C7EDF21082EF7B185EB /* Pods-YMFrameworksShowCase.debug.xcconfig */;
+			baseConfigurationReference = FE76ED4A649C73A2AFC0D5803A418BC1 /* YMCirclePickerView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YMCirclePickerView/YMCirclePickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YMCirclePickerView/YMCirclePickerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YMCirclePickerView/YMCirclePickerView.modulemap";
+				PRODUCT_MODULE_NAME = YMCirclePickerView;
+				PRODUCT_NAME = YMCirclePickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1D25290505ADE1A2081502092BD73746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2FBFAF360B2F86CF0C9FD85A60A6260 /* Pods-YMFrameworksShowCase.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -513,14 +753,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		51692113BC1EBFD9DECE05186FF9EA88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42F6920328C6DCC60BA263258B9D7A24 /* YMNetwork-Swift.release.xcconfig */;
+			baseConfigurationReference = 58B9791B72CBC9730099E66AB5964ED4 /* YMNetwork-Swift.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -556,7 +797,7 @@
 		};
 		54A12ABEF87ADE9FA80CEC2C9B59B484 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E04FB1C126EE28AD7CF6AC7C8D94AE5 /* YMNetwork-Swift.debug.xcconfig */;
+			baseConfigurationReference = 5623B8057D62A7912EE19648979C1A9C /* YMNetwork-Swift.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -591,7 +832,7 @@
 		};
 		711664FEA8D62E3AB15A6E338619A7A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DC07F4A1A95D92FCD563848C8F84040 /* VisionDetect.debug.xcconfig */;
+			baseConfigurationReference = B5CAE3FE2B0D9EC2F813D340CC0D56BE /* VisionDetect.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -624,6 +865,23 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		90BE47564A33E947E79A4E4B01B4BB39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE76ED4A649C73A2AFC0D5803A418BC1 /* YMCirclePickerView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YMCirclePickerView";
+				IBSC_MODULE = YMCirclePickerView;
+				INFOPLIST_FILE = "Target Support Files/YMCirclePickerView/ResourceBundle-YMCirclePickerView-YMCirclePickerView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = YMCirclePickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
 		};
 		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -689,12 +947,10 @@
 			};
 			name = Debug;
 		};
-		98AFFFF5248EE818A5990FAFA135FBCF /* Release */ = {
+		9B272F0AABBE6940003635C242BA9973 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2FBFAF360B2F86CF0C9FD85A60A6260 /* Pods-YMFrameworksShowCase.release.xcconfig */;
+			baseConfigurationReference = 945F538DB9ED81D362362174A457EBB5 /* YMCirclePickerView.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -704,29 +960,27 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-YMFrameworksShowCase/Pods-YMFrameworksShowCase-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/YMCirclePickerView/YMCirclePickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YMCirclePickerView/YMCirclePickerView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YMFrameworksShowCase/Pods-YMFrameworksShowCase.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/YMCirclePickerView/YMCirclePickerView.modulemap";
+				PRODUCT_MODULE_NAME = YMCirclePickerView;
+				PRODUCT_NAME = YMCirclePickerView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -788,6 +1042,61 @@
 			};
 			name = Release;
 		};
+		F6F41786C7AE28D2006C8C662AF39599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E72C962F23139C7EDF21082EF7B185EB /* Pods-YMFrameworksShowCase.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YMFrameworksShowCase/Pods-YMFrameworksShowCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YMFrameworksShowCase/Pods-YMFrameworksShowCase.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA4AC2509D8E8345E0E5032A6160F468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 945F538DB9ED81D362362174A457EBB5 /* YMCirclePickerView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YMCirclePickerView";
+				IBSC_MODULE = YMCirclePickerView;
+				INFOPLIST_FILE = "Target Support Files/YMCirclePickerView/ResourceBundle-YMCirclePickerView-YMCirclePickerView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = YMCirclePickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -796,6 +1105,15 @@
 			buildConfigurations = (
 				54A12ABEF87ADE9FA80CEC2C9B59B484 /* Debug */,
 				51692113BC1EBFD9DECE05186FF9EA88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32A4E0ECD77400B00A7A2EBD10869053 /* Build configuration list for PBXNativeTarget "Pods-YMFrameworksShowCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6F41786C7AE28D2006C8C662AF39599 /* Debug */,
+				1D25290505ADE1A2081502092BD73746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -818,11 +1136,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C624790CE1918EADAB6FF37E5A5E794E /* Build configuration list for PBXNativeTarget "Pods-YMFrameworksShowCase" */ = {
+		49FA20E52CAF94C91B8BE5AB68E7DB18 /* Build configuration list for PBXNativeTarget "YMCirclePickerView-YMCirclePickerView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				191D7E0D0438FFA7A28B3E2478A277E6 /* Debug */,
-				98AFFFF5248EE818A5990FAFA135FBCF /* Release */,
+				FA4AC2509D8E8345E0E5032A6160F468 /* Debug */,
+				90BE47564A33E947E79A4E4B01B4BB39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDA047A773A5795C449DFB553F2A839 /* Build configuration list for PBXNativeTarget "YMCirclePickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B272F0AABBE6940003635C242BA9973 /* Debug */,
+				074571AC5ED3746FDC58660F2015692F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
